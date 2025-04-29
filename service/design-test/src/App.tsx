@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import styled from "@emotion/styled";
-import { vars } from "@design/themes";
+import { vars, classes } from "@design/themes";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -31,12 +31,16 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
 
-      <Text>font color is {vars.colors.$static.light.red[500]}</Text>
+      <Text>
+        font color is {vars.colors.$static.light.red[500]}
+        {vars.box.radii.base}
+      </Text>
     </>
   );
 }
 
 const Text = styled.p`
+  ${classes.typography.heading["4xl"]}
   color: ${vars.colors.$static.light.red[500]};
 `;
 
