@@ -1,11 +1,21 @@
 {
   "name": "design-system",
   "version": "0.0.0",
+  "workspaces": [
+    "packages/**/*",
+    "services/**/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "nx build",
+    "graph": "nx run-many --target=build --graph"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0"
+  },
+  "packageManager": "yarn@4.9.1",
+  "devDependencies": {
+    "nx": "^20.8.1"
   }
 }
