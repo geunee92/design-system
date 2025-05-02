@@ -1,0 +1,12 @@
+file:///Users/geunee/Desktop/design-system/packages/themes/build.js:2
+import pkg from "./package.json" assert { type: "json" };
+                                 ^^^^^^
+
+SyntaxError: Unexpected identifier 'assert'
+[90m    at compileSourceTextModule (node:internal/modules/esm/utils:344:16)[39m
+[90m    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:105:18)[39m
+[90m    at #translate (node:internal/modules/esm/loader:534:12)[39m
+[90m    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:581:27)[39m
+[90m    at async ModuleJob._link (node:internal/modules/esm/module_job:116:19)[39m
+
+Node.js v22.15.0

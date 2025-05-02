@@ -1,0 +1,11 @@
+file:///Users/geunee/Desktop/design-system/packages/themes/build.js:4
+run({
+^
+
+ReferenceError: run is not defined
+    at [90mfile:///Users/geunee/Desktop/design-system/packages/themes/[39mbuild.js:4:1
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)[39m
+[90m    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)[39m
+[90m    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)[39m
+
+Node.js v22.15.0

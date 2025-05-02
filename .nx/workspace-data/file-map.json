@@ -11,12 +11,12 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "yarn.lock",
-        "hash": "3937525737306788495"
+        "file": "tsconfig.eslint.json",
+        "hash": "9188420867814966836"
       },
       {
-        "file": "package.json",
-        "hash": "11822781054512644962"
+        "file": "yarn.lock",
+        "hash": "4526674205390845645"
       },
       {
         "file": "README.md",
@@ -27,30 +27,46 @@
         "hash": "3287485768833251469"
       },
       {
-        "file": ".yarnrc.yml",
-        "hash": "642009886735632000"
+        "file": ".eslintrc.js",
+        "hash": "14052870021940613983"
       },
       {
         "file": ".gitignore",
         "hash": "1797353270377212724"
       },
       {
+        "file": "package.json",
+        "hash": "12362069222640584090"
+      },
+      {
         "file": "nx.json",
         "hash": "14924708307150832443"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "1179432164812416385"
+      },
+      {
+        "file": ".yarnrc.yml",
+        "hash": "642009886735632000"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "12078670118560183497"
       }
     ],
     "projectFileMap": {
       "@design/themes": [
         {
           "file": "packages/themes/build.js",
-          "hash": "2497410168223411524"
+          "hash": "11313241788351511933"
         },
         {
           "file": "packages/themes/package.json",
-          "hash": "9924599257129777010",
+          "hash": "15447323209807869585",
           "deps": [
-            "npm:esbuild",
-            "npm:typescript@5.8.3"
+            "@design/esbuild-config",
+            "npm:typescript"
           ]
         },
         {
@@ -103,91 +119,24 @@
         },
         {
           "file": "packages/themes/tsconfig.json",
-          "hash": "1179432164812416385"
+          "hash": "10248009443664204963"
         }
       ],
-      "design-test": [
+      "@design/esbuild-config": [
         {
-          "file": "services/design-test/.gitignore",
-          "hash": "13046175384202504187"
+          "file": "packages/esbuild-config/README.md",
+          "hash": "6886952344311067916"
         },
         {
-          "file": "services/design-test/README.md",
-          "hash": "13160460843517416105"
+          "file": "packages/esbuild-config/index.js",
+          "hash": "219371835848018192"
         },
         {
-          "file": "services/design-test/eslint.config.js",
-          "hash": "16145672096969245511"
-        },
-        {
-          "file": "services/design-test/index.html",
-          "hash": "1652131097151113363"
-        },
-        {
-          "file": "services/design-test/package.json",
-          "hash": "6451304815269155073",
+          "file": "packages/esbuild-config/package.json",
+          "hash": "5126038692030175162",
           "deps": [
-            "npm:@eslint/js",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:@vitejs/plugin-react",
-            "npm:eslint",
-            "npm:eslint-plugin-react-hooks",
-            "npm:eslint-plugin-react-refresh",
-            "npm:globals",
-            "npm:typescript",
-            "npm:typescript-eslint",
-            "npm:vite",
-            "@design/themes",
-            "npm:@emotion/react",
-            "npm:@emotion/styled",
-            "npm:react",
-            "npm:react-dom"
+            "npm:esbuild"
           ]
-        },
-        {
-          "file": "services/design-test/public/vite.svg",
-          "hash": "16046085400642193116"
-        },
-        {
-          "file": "services/design-test/src/App.css",
-          "hash": "8449572602081825222"
-        },
-        {
-          "file": "services/design-test/src/App.tsx",
-          "hash": "11844589984456221039"
-        },
-        {
-          "file": "services/design-test/src/assets/react.svg",
-          "hash": "16069471864800376455"
-        },
-        {
-          "file": "services/design-test/src/index.css",
-          "hash": "13504153635654440336"
-        },
-        {
-          "file": "services/design-test/src/main.tsx",
-          "hash": "8859701857324136149"
-        },
-        {
-          "file": "services/design-test/src/vite-env.d.ts",
-          "hash": "12946363841406869089"
-        },
-        {
-          "file": "services/design-test/tsconfig.app.json",
-          "hash": "2323919910019125824"
-        },
-        {
-          "file": "services/design-test/tsconfig.json",
-          "hash": "2365188958523842680"
-        },
-        {
-          "file": "services/design-test/tsconfig.node.json",
-          "hash": "4200375265648421840"
-        },
-        {
-          "file": "services/design-test/vite.config.ts",
-          "hash": "16225914092815047172"
         }
       ]
     }
