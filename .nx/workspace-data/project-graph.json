@@ -2387,6 +2387,15 @@
         "hash": "10c0/f1c4d9f32f509f664b2d073ea114ff0a83f154bd3cdae429cade64ad1ca0fdc1ba745f2811496cc6a6f8e5513a9a0fa3798ffc41e6ff8868aa7f06c825f615ef"
       }
     },
+    "npm:@vanilla-extract/recipes": {
+      "type": "npm",
+      "name": "npm:@vanilla-extract/recipes",
+      "data": {
+        "version": "0.5.5",
+        "packageName": "@vanilla-extract/recipes",
+        "hash": "10c0/5e032bc3f7873b1deb39fc64e2ab6871ac3d70dd527309b4e08310def142180fd346df48ca33306ac0ea7626673856e3995fab03f56f54a967c48a3e5e4545d3"
+      }
+    },
     "npm:@vanilla-extract/sprinkles": {
       "type": "npm",
       "name": "npm:@vanilla-extract/sprinkles",
@@ -7616,6 +7625,11 @@
       {
         "source": "@design/react-components-layout",
         "target": "npm:@vanilla-extract/esbuild-plugin",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-layout",
+        "target": "npm:@vanilla-extract/recipes",
         "type": "static"
       },
       {
@@ -15956,5 +15970,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1746685666427
+  "computedAt": 1746687074339
 }
