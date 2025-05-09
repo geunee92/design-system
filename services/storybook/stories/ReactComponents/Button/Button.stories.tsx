@@ -3,7 +3,7 @@ import { Button as _Button } from "@design/react-components-button";
 import { vars } from "@design/themes";
 import "@design/react-components-layout/style.css";
 import { Text } from "@design/react-components-layout";
-import { useButton } from "@design/react-hooks-button";
+import { useButton, useToggleButton } from "@design/react-hooks-button";
 import React from "react";
 
 export default {
@@ -62,6 +62,25 @@ export const TextButtonStory = {
       >
         텍스트 버튼입니다.
       </Text>
+    );
+  },
+};
+
+export const ToggleButtonStory = {
+  render: () => {
+    const { buttonProps, isSelected } = useToggleButton(
+      { elementType: "button" },
+      false,
+    );
+
+    return (
+      <_Button
+        {...buttonProps}
+        variant={isSelected ? "solid" : "outline"}
+        color="green"
+      >
+        {isSelected ? "😀" : "😂"}
+      </_Button>
     );
   },
 };

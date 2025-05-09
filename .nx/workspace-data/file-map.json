@@ -10,251 +10,6 @@
   },
   "fileMap": {
     "projectFileMap": {
-      "@design/react-hooks-button": [
-        {
-          "file": "packages/react/hooks/button/build.js",
-          "hash": "11313241788351511933"
-        },
-        {
-          "file": "packages/react/hooks/button/package.json",
-          "hash": "12534263245326417214",
-          "deps": [
-            "npm:react",
-            "@design/esbuild-config",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:react-dom",
-            "npm:typescript",
-            "npm:clsx"
-          ]
-        },
-        {
-          "file": "packages/react/hooks/button/src/index.ts",
-          "hash": "3892138785705217561"
-        },
-        {
-          "file": "packages/react/hooks/button/src/types.ts",
-          "hash": "16593753731839844748"
-        },
-        {
-          "file": "packages/react/hooks/button/src/useButton.tsx",
-          "hash": "17027917869105670095"
-        },
-        {
-          "file": "packages/react/hooks/button/tsconfig.json",
-          "hash": "10344179325425879767"
-        }
-      ],
-      "@design/react-components-button": [
-        {
-          "file": "packages/react/components/button/build.js",
-          "hash": "14847324200671330000"
-        },
-        {
-          "file": "packages/react/components/button/package.json",
-          "hash": "12530110280512217594",
-          "deps": [
-            "@design/themes",
-            "npm:react",
-            "@design/esbuild-config",
-            "@design/react-hooks-button",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:@vanilla-extract/css",
-            "npm:@vanilla-extract/dynamic",
-            "npm:@vanilla-extract/esbuild-plugin",
-            "npm:@vanilla-extract/recipes",
-            "npm:@vanilla-extract/sprinkles",
-            "npm:autoprefixer",
-            "npm:postcss",
-            "npm:react-dom",
-            "npm:typescript",
-            "npm:clsx"
-          ]
-        },
-        {
-          "file": "packages/react/components/button/src/Button.tsx",
-          "hash": "11618788357186952506"
-        },
-        {
-          "file": "packages/react/components/button/src/index.ts",
-          "hash": "8409040364927157818"
-        },
-        {
-          "file": "packages/react/components/button/src/style.css.ts",
-          "hash": "18283341336110057239"
-        },
-        {
-          "file": "packages/react/components/button/src/types.ts",
-          "hash": "10509118310460631555"
-        },
-        {
-          "file": "packages/react/components/button/tsconfig.json",
-          "hash": "10344179325425879767"
-        }
-      ],
-      "@design/react-components-layout": [
-        {
-          "file": "packages/react/components/layout/build.js",
-          "hash": "14847324200671330000"
-        },
-        {
-          "file": "packages/react/components/layout/package.json",
-          "hash": "9648328345856865069",
-          "deps": [
-            "@design/themes",
-            "npm:react",
-            "@design/esbuild-config",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:@vanilla-extract/css",
-            "npm:@vanilla-extract/esbuild-plugin",
-            "npm:@vanilla-extract/recipes",
-            "npm:@vanilla-extract/sprinkles",
-            "npm:autoprefixer",
-            "npm:postcss",
-            "npm:react-dom",
-            "npm:typescript",
-            "npm:clsx"
-          ]
-        },
-        {
-          "file": "packages/react/components/layout/src/core/style.css.ts",
-          "hash": "5658506699604826391"
-        },
-        {
-          "file": "packages/react/components/layout/src/core/types.ts",
-          "hash": "11608835774093861949"
-        },
-        {
-          "file": "packages/react/components/layout/src/index.ts",
-          "hash": "8043087495670228573"
-        },
-        {
-          "file": "packages/react/components/layout/src/layout/Box.tsx",
-          "hash": "1880813226396781237"
-        },
-        {
-          "file": "packages/react/components/layout/src/layout/Divider.tsx",
-          "hash": "2439529319987288725"
-        },
-        {
-          "file": "packages/react/components/layout/src/layout/Flex.tsx",
-          "hash": "949713738604924439"
-        },
-        {
-          "file": "packages/react/components/layout/src/layout/Grid.tsx",
-          "hash": "7940562234207512900"
-        },
-        {
-          "file": "packages/react/components/layout/src/layout/GridItem.tsx",
-          "hash": "16725285930425883830"
-        },
-        {
-          "file": "packages/react/components/layout/src/layout/index.ts",
-          "hash": "10592587984320221360"
-        },
-        {
-          "file": "packages/react/components/layout/src/layout/types.ts",
-          "hash": "7711367869745572698"
-        },
-        {
-          "file": "packages/react/components/layout/src/typography/Heading.tsx",
-          "hash": "11601081232982576443"
-        },
-        {
-          "file": "packages/react/components/layout/src/typography/Text.tsx",
-          "hash": "7483014943353971281"
-        },
-        {
-          "file": "packages/react/components/layout/src/typography/index.ts",
-          "hash": "462209517168200293"
-        },
-        {
-          "file": "packages/react/components/layout/src/typography/style.css.ts",
-          "hash": "1625234255959360224"
-        },
-        {
-          "file": "packages/react/components/layout/src/typography/types.ts",
-          "hash": "800209035478746864"
-        },
-        {
-          "file": "packages/react/components/layout/src/utils/properties.ts",
-          "hash": "5698855879563130366"
-        },
-        {
-          "file": "packages/react/components/layout/tsconfig.json",
-          "hash": "10344179325425879767"
-        }
-      ],
-      "@design/storybook": [
-        {
-          "file": "services/storybook/.storybook/main.js",
-          "hash": "4636232379943974874"
-        },
-        {
-          "file": "services/storybook/.storybook/preview.js",
-          "hash": "13967948772147123675"
-        },
-        {
-          "file": "services/storybook/.storybook/vitest.setup.js",
-          "hash": "12306884984581110654"
-        },
-        {
-          "file": "services/storybook/README.md",
-          "hash": "2624393197388313932"
-        },
-        {
-          "file": "services/storybook/package.json",
-          "hash": "14965750856086700205",
-          "deps": [
-            "npm:@chromatic-com/storybook",
-            "@design/react-components-button",
-            "@design/react-components-layout",
-            "@design/react-hooks-button",
-            "@design/themes",
-            "npm:@storybook/addon-essentials",
-            "npm:@storybook/addon-onboarding",
-            "npm:@storybook/blocks",
-            "npm:@storybook/experimental-addon-test",
-            "npm:@storybook/react",
-            "npm:@storybook/react-vite",
-            "npm:@storybook/test",
-            "npm:@vitest/browser",
-            "npm:@vitest/coverage-v8",
-            "npm:playwright",
-            "npm:prop-types",
-            "npm:storybook",
-            "npm:storybook-addon-root-attributes",
-            "npm:vite",
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "services/storybook/stories/ReactComponents/Button/Button.stories.tsx",
-          "hash": "4999367120906078236"
-        },
-        {
-          "file": "services/storybook/stories/ReactComponents/Layout/Box.stories.tsx",
-          "hash": "581852115420615072"
-        },
-        {
-          "file": "services/storybook/stories/ReactComponents/Layout/Divider.stories.tsx",
-          "hash": "8022903854489763433"
-        },
-        {
-          "file": "services/storybook/stories/ReactComponents/Layout/Flex.stories.tsx",
-          "hash": "7711119180040722455"
-        },
-        {
-          "file": "services/storybook/stories/ReactComponents/Layout/Text.stories.tsx",
-          "hash": "14400922439473532413"
-        },
-        {
-          "file": "services/storybook/vitest.config.js",
-          "hash": "13967297142312120885"
-        }
-      ],
       "@design/themes": [
         {
           "file": "packages/themes/build.js",
@@ -321,6 +76,41 @@
           "hash": "10248009443664204963"
         }
       ],
+      "@design/react-hooks-toggle": [
+        {
+          "file": "packages/react/hooks/toggle/build.js",
+          "hash": "11313241788351511933"
+        },
+        {
+          "file": "packages/react/hooks/toggle/package.json",
+          "hash": "7527665168862678019",
+          "deps": [
+            "npm:react",
+            "@design/esbuild-config",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:react-dom",
+            "npm:typescript",
+            "npm:clsx"
+          ]
+        },
+        {
+          "file": "packages/react/hooks/toggle/src/index.ts",
+          "hash": "13190166400749655539"
+        },
+        {
+          "file": "packages/react/hooks/toggle/src/types.ts",
+          "hash": "13666444803187522029"
+        },
+        {
+          "file": "packages/react/hooks/toggle/src/useToggle.tsx",
+          "hash": "9256311866014801661"
+        },
+        {
+          "file": "packages/react/hooks/toggle/tsconfig.json",
+          "hash": "10344179325425879767"
+        }
+      ],
       "@design/esbuild-config": [
         {
           "file": "packages/esbuild-config/README.md",
@@ -336,6 +126,256 @@
           "deps": [
             "npm:esbuild"
           ]
+        }
+      ],
+      "@design/react-components-button": [
+        {
+          "file": "packages/react/components/button/build.js",
+          "hash": "14847324200671330000"
+        },
+        {
+          "file": "packages/react/components/button/package.json",
+          "hash": "12530110280512217594",
+          "deps": [
+            "@design/themes",
+            "npm:react",
+            "@design/esbuild-config",
+            "@design/react-hooks-button",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vanilla-extract/css",
+            "npm:@vanilla-extract/dynamic",
+            "npm:@vanilla-extract/esbuild-plugin",
+            "npm:@vanilla-extract/recipes",
+            "npm:@vanilla-extract/sprinkles",
+            "npm:autoprefixer",
+            "npm:postcss",
+            "npm:react-dom",
+            "npm:typescript",
+            "npm:clsx"
+          ]
+        },
+        {
+          "file": "packages/react/components/button/src/Button.tsx",
+          "hash": "11618788357186952506"
+        },
+        {
+          "file": "packages/react/components/button/src/index.ts",
+          "hash": "8409040364927157818"
+        },
+        {
+          "file": "packages/react/components/button/src/style.css.ts",
+          "hash": "18283341336110057239"
+        },
+        {
+          "file": "packages/react/components/button/src/types.ts",
+          "hash": "10509118310460631555"
+        },
+        {
+          "file": "packages/react/components/button/tsconfig.json",
+          "hash": "10344179325425879767"
+        }
+      ],
+      "@design/react-hooks-button": [
+        {
+          "file": "packages/react/hooks/button/build.js",
+          "hash": "11313241788351511933"
+        },
+        {
+          "file": "packages/react/hooks/button/package.json",
+          "hash": "17257461162272477580",
+          "deps": [
+            "npm:react",
+            "@design/esbuild-config",
+            "@design/react-hooks-toggle",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:react-dom",
+            "npm:typescript",
+            "npm:clsx"
+          ]
+        },
+        {
+          "file": "packages/react/hooks/button/src/index.ts",
+          "hash": "10535575191923847207"
+        },
+        {
+          "file": "packages/react/hooks/button/src/types.ts",
+          "hash": "2574255652881697121"
+        },
+        {
+          "file": "packages/react/hooks/button/src/useButton.tsx",
+          "hash": "17027917869105670095"
+        },
+        {
+          "file": "packages/react/hooks/button/src/useToggleButton.tsx",
+          "hash": "4371948490279159530"
+        },
+        {
+          "file": "packages/react/hooks/button/tsconfig.json",
+          "hash": "10344179325425879767"
+        }
+      ],
+      "@design/storybook": [
+        {
+          "file": "services/storybook/.storybook/main.js",
+          "hash": "4636232379943974874"
+        },
+        {
+          "file": "services/storybook/.storybook/preview.js",
+          "hash": "13967948772147123675"
+        },
+        {
+          "file": "services/storybook/.storybook/vitest.setup.js",
+          "hash": "12306884984581110654"
+        },
+        {
+          "file": "services/storybook/README.md",
+          "hash": "2624393197388313932"
+        },
+        {
+          "file": "services/storybook/package.json",
+          "hash": "14965750856086700205",
+          "deps": [
+            "npm:@chromatic-com/storybook",
+            "@design/react-components-button",
+            "@design/react-components-layout",
+            "@design/react-hooks-button",
+            "@design/themes",
+            "npm:@storybook/addon-essentials",
+            "npm:@storybook/addon-onboarding",
+            "npm:@storybook/blocks",
+            "npm:@storybook/experimental-addon-test",
+            "npm:@storybook/react",
+            "npm:@storybook/react-vite",
+            "npm:@storybook/test",
+            "npm:@vitest/browser",
+            "npm:@vitest/coverage-v8",
+            "npm:playwright",
+            "npm:prop-types",
+            "npm:storybook",
+            "npm:storybook-addon-root-attributes",
+            "npm:vite",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "services/storybook/stories/ReactComponents/Button/Button.stories.tsx",
+          "hash": "4006079477454149112"
+        },
+        {
+          "file": "services/storybook/stories/ReactComponents/Layout/Box.stories.tsx",
+          "hash": "581852115420615072"
+        },
+        {
+          "file": "services/storybook/stories/ReactComponents/Layout/Divider.stories.tsx",
+          "hash": "8022903854489763433"
+        },
+        {
+          "file": "services/storybook/stories/ReactComponents/Layout/Flex.stories.tsx",
+          "hash": "7711119180040722455"
+        },
+        {
+          "file": "services/storybook/stories/ReactComponents/Layout/Text.stories.tsx",
+          "hash": "14400922439473532413"
+        },
+        {
+          "file": "services/storybook/vitest.config.js",
+          "hash": "13967297142312120885"
+        }
+      ],
+      "@design/react-components-layout": [
+        {
+          "file": "packages/react/components/layout/build.js",
+          "hash": "14847324200671330000"
+        },
+        {
+          "file": "packages/react/components/layout/package.json",
+          "hash": "9648328345856865069",
+          "deps": [
+            "@design/themes",
+            "npm:react",
+            "@design/esbuild-config",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vanilla-extract/css",
+            "npm:@vanilla-extract/esbuild-plugin",
+            "npm:@vanilla-extract/recipes",
+            "npm:@vanilla-extract/sprinkles",
+            "npm:autoprefixer",
+            "npm:postcss",
+            "npm:react-dom",
+            "npm:typescript",
+            "npm:clsx"
+          ]
+        },
+        {
+          "file": "packages/react/components/layout/src/core/style.css.ts",
+          "hash": "5178472597711962396"
+        },
+        {
+          "file": "packages/react/components/layout/src/core/types.ts",
+          "hash": "11608835774093861949"
+        },
+        {
+          "file": "packages/react/components/layout/src/index.ts",
+          "hash": "8043087495670228573"
+        },
+        {
+          "file": "packages/react/components/layout/src/layout/Box.tsx",
+          "hash": "2850316510987021267"
+        },
+        {
+          "file": "packages/react/components/layout/src/layout/Divider.tsx",
+          "hash": "2439529319987288725"
+        },
+        {
+          "file": "packages/react/components/layout/src/layout/Flex.tsx",
+          "hash": "10081729534599810939"
+        },
+        {
+          "file": "packages/react/components/layout/src/layout/Grid.tsx",
+          "hash": "4302426638494581950"
+        },
+        {
+          "file": "packages/react/components/layout/src/layout/GridItem.tsx",
+          "hash": "17812383936832578858"
+        },
+        {
+          "file": "packages/react/components/layout/src/layout/index.ts",
+          "hash": "10592587984320221360"
+        },
+        {
+          "file": "packages/react/components/layout/src/layout/types.ts",
+          "hash": "7711367869745572698"
+        },
+        {
+          "file": "packages/react/components/layout/src/typography/Heading.tsx",
+          "hash": "1896566758865436495"
+        },
+        {
+          "file": "packages/react/components/layout/src/typography/Text.tsx",
+          "hash": "12628465776603456719"
+        },
+        {
+          "file": "packages/react/components/layout/src/typography/index.ts",
+          "hash": "462209517168200293"
+        },
+        {
+          "file": "packages/react/components/layout/src/typography/style.css.ts",
+          "hash": "1625234255959360224"
+        },
+        {
+          "file": "packages/react/components/layout/src/typography/types.ts",
+          "hash": "800209035478746864"
+        },
+        {
+          "file": "packages/react/components/layout/src/utils/properties.ts",
+          "hash": "5698855879563130366"
+        },
+        {
+          "file": "packages/react/components/layout/tsconfig.json",
+          "hash": "10344179325425879767"
         }
       ]
     },
@@ -370,7 +410,7 @@
       },
       {
         "file": "package.json",
-        "hash": "10578457123193680907"
+        "hash": "3550945107969442348"
       },
       {
         "file": "tsconfig.base.json",
@@ -382,7 +422,7 @@
       },
       {
         "file": "yarn.lock",
-        "hash": "1883875319766170034"
+        "hash": "224807163881270628"
       }
     ]
   }

@@ -332,6 +332,116 @@
         "implicitDependencies": []
       }
     },
+    "@design/react-hooks-toggle": {
+      "name": "@design/react-hooks-toggle",
+      "type": "lib",
+      "data": {
+        "root": "packages/react/hooks/toggle",
+        "name": "@design/react-hooks-toggle",
+        "projectType": "library",
+        "tags": [
+          "npm:public"
+        ],
+        "metadata": {
+          "targetGroups": {
+            "NPM Scripts": [
+              "build",
+              "build:js",
+              "build:type",
+              "clean",
+              "dev"
+            ]
+          },
+          "js": {
+            "packageName": "@design/react-hooks-toggle",
+            "packageExports": {
+              ".": {
+                "types": "./dist/index.d.ts",
+                "import": "./dist/index.js",
+                "require": "./dist/index.cjs"
+              }
+            },
+            "packageMain": "dist/index.js",
+            "isInPackageManagerWorkspaces": true
+          }
+        },
+        "targets": {
+          "build": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build"
+            },
+            "metadata": {
+              "scriptContent": "yarn clean && yarn build:js && yarn build:type && yarn build:css",
+              "runCommand": "yarn build"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "dependsOn": [
+              "^build"
+            ]
+          },
+          "build:js": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:js"
+            },
+            "metadata": {
+              "scriptContent": "node build.js",
+              "runCommand": "yarn build:js"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build:type": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:type"
+            },
+            "metadata": {
+              "scriptContent": "yarn tsc --emitDeclarationOnly",
+              "runCommand": "yarn build:type"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "clean": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "clean"
+            },
+            "metadata": {
+              "scriptContent": "rm -rf dist",
+              "runCommand": "yarn clean"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "dev": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "dev"
+            },
+            "metadata": {
+              "scriptContent": "yarn build:js --watch && yarn build:type --watch",
+              "runCommand": "yarn dev"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "nx-release-publish": {
+            "executor": "@nx/js:release-publish",
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "options": {},
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
     "@design/esbuild-config": {
       "name": "@design/esbuild-config",
       "type": "lib",
@@ -7988,6 +8098,11 @@
       },
       {
         "source": "@design/react-hooks-button",
+        "target": "@design/react-hooks-toggle",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-hooks-button",
         "target": "npm:@types/react",
         "type": "static"
       },
@@ -8008,6 +8123,43 @@
       },
       {
         "source": "@design/react-hooks-button",
+        "target": "npm:clsx",
+        "type": "static"
+      }
+    ],
+    "@design/react-hooks-toggle": [
+      {
+        "source": "@design/react-hooks-toggle",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-hooks-toggle",
+        "target": "@design/esbuild-config",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-hooks-toggle",
+        "target": "npm:@types/react",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-hooks-toggle",
+        "target": "npm:@types/react-dom",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-hooks-toggle",
+        "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-hooks-toggle",
+        "target": "npm:typescript",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-hooks-toggle",
         "target": "npm:clsx",
         "type": "static"
       }
@@ -16336,5 +16488,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1746775331442
+  "computedAt": 1746777117103
 }

@@ -11,7 +11,7 @@
     "graph": "nx run-many --target=build --graph",
     "dev:all": "yarn dev:storybook & yarn dev:packages",
     "dev:storybook": "nx storybook @design/storybook",
-    "dev:packages": "nx run-many --target=dev --projects='@design/react-components-*'"
+    "dev:packages": "nx run-many --target=dev --projects='@design/react-hooks-*,@design/react-components-*'"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

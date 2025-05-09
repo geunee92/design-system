@@ -1,5 +1,5 @@
 {
-  "name": "@design/react-hooks-button",
+  "name": "@design/react-hooks-toggle",
   "version": "0.0.1",
   "type": "module",
   "main": "dist/index.js",
@@ -19,7 +19,6 @@
   },
   "devDependencies": {
     "@design/esbuild-config": "workspace:^",
-    "@design/react-hooks-toggle": "workspace:^",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "react": "^18.2.0",
