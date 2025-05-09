@@ -11,8 +11,11 @@ import {
   spinnerStyle,
 } from "./style.css";
 import { vars } from "@design/themes";
+import { useButton } from "@design/react-hooks-button";
 
 const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
+  const { buttonProps } = useButton(props);
+
   const {
     variant = "solid",
     size = "md",
@@ -20,10 +23,8 @@ const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
     leftIcon,
     rightIcon,
     isLoading,
-    isDisabled = false,
     children,
     style,
-    onKeyDown,
   } = props;
 
   const endableColor = vars.colors.$scale[color][500];
@@ -37,34 +38,16 @@ const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
       ? vars.colors.$scale[color][700]
       : vars.colors.$scale[color][100];
 
-  const disabled = isDisabled || isLoading;
-
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
-    onKeyDown?.(event);
-
-    if (event.key === "Enter" || event.key === "13") {
-      event.preventDefault();
-      event.currentTarget.click();
-    }
-  };
-
   return (
     <button
-      {...props}
+      {...buttonProps}
       ref={ref}
-      onKeyDown={handleKeyDown}
-      onClick={() => {
-        console.log("ttt");
-      }}
-      role="button"
       className={clsx([
         buttonStyle({
           size,
           variant,
         }),
       ])}
-      data-loading={isLoading}
-      disabled={disabled}
       style={{
         ...assignInlineVars({
           [enableColorVariant]: endableColor,

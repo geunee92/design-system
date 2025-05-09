@@ -1,5 +1,5 @@
 {
-  "name": "@design/react-components-button",
+  "name": "@design/react-hooks-button",
   "version": "0.0.1",
   "type": "module",
   "main": "dist/index.js",
@@ -8,8 +8,7 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    },
-    "./style.css": "./dist/index.css"
+    }
   },
   "scripts": {
     "build": "yarn clean && yarn build:js && yarn build:type && yarn build:css",
@@ -20,26 +19,16 @@
   },
   "devDependencies": {
     "@design/esbuild-config": "workspace:^",
-    "@design/react-hooks-button": "workspace:^",
-    "@design/themes": "workspace:^",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
-    "@vanilla-extract/css": "^1.13.0",
-    "@vanilla-extract/dynamic": "^2.1.2",
-    "@vanilla-extract/esbuild-plugin": "^2.3.0",
-    "@vanilla-extract/recipes": "^0.5.5",
-    "@vanilla-extract/sprinkles": "^1.6.3",
-    "autoprefixer": "^10.4.15",
-    "postcss": "^8.4.29",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "@design/themes": "workspace:^",
     "react": "*"
   },
   "dependencies": {
-    "clsx": "^2.1.1"
+    "clsx": "^2.0.0"
   }
 }
