@@ -10,85 +10,6 @@
   },
   "fileMap": {
     "projectFileMap": {
-      "@design/esbuild-config": [
-        {
-          "file": "packages/esbuild-config/README.md",
-          "hash": "6886952344311067916"
-        },
-        {
-          "file": "packages/esbuild-config/index.js",
-          "hash": "219371835848018192"
-        },
-        {
-          "file": "packages/esbuild-config/package.json",
-          "hash": "5126038692030175162",
-          "deps": [
-            "npm:esbuild"
-          ]
-        }
-      ],
-      "@design/storybook": [
-        {
-          "file": "services/storybook/.storybook/main.js",
-          "hash": "4636232379943974874"
-        },
-        {
-          "file": "services/storybook/.storybook/preview.js",
-          "hash": "13967948772147123675"
-        },
-        {
-          "file": "services/storybook/.storybook/vitest.setup.js",
-          "hash": "12306884984581110654"
-        },
-        {
-          "file": "services/storybook/README.md",
-          "hash": "2624393197388313932"
-        },
-        {
-          "file": "services/storybook/package.json",
-          "hash": "16140435452431658837",
-          "deps": [
-            "npm:@chromatic-com/storybook",
-            "@design/react-components-layout",
-            "@design/themes",
-            "npm:@storybook/addon-essentials",
-            "npm:@storybook/addon-onboarding",
-            "npm:@storybook/blocks",
-            "npm:@storybook/experimental-addon-test",
-            "npm:@storybook/react",
-            "npm:@storybook/react-vite",
-            "npm:@storybook/test",
-            "npm:@vitest/browser",
-            "npm:@vitest/coverage-v8",
-            "npm:playwright",
-            "npm:prop-types",
-            "npm:storybook",
-            "npm:storybook-addon-root-attributes",
-            "npm:vite",
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "services/storybook/stories/ReactComponents/Layout/Box.stories.tsx",
-          "hash": "581852115420615072"
-        },
-        {
-          "file": "services/storybook/stories/ReactComponents/Layout/Divider.stories.tsx",
-          "hash": "8022903854489763433"
-        },
-        {
-          "file": "services/storybook/stories/ReactComponents/Layout/Flex.stories.tsx",
-          "hash": "7711119180040722455"
-        },
-        {
-          "file": "services/storybook/stories/ReactComponents/Layout/Text.stories.tsx",
-          "hash": "14400922439473532413"
-        },
-        {
-          "file": "services/storybook/vitest.config.js",
-          "hash": "13967297142312120885"
-        }
-      ],
       "@design/themes": [
         {
           "file": "packages/themes/build.js",
@@ -153,6 +74,70 @@
         {
           "file": "packages/themes/tsconfig.json",
           "hash": "10248009443664204963"
+        }
+      ],
+      "@design/react-components-button": [
+        {
+          "file": "packages/react/components/button/build.js",
+          "hash": "14847324200671330000"
+        },
+        {
+          "file": "packages/react/components/button/package.json",
+          "hash": "4354526598700414434",
+          "deps": [
+            "@design/themes",
+            "npm:react",
+            "@design/esbuild-config",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vanilla-extract/css",
+            "npm:@vanilla-extract/dynamic",
+            "npm:@vanilla-extract/esbuild-plugin",
+            "npm:@vanilla-extract/recipes",
+            "npm:@vanilla-extract/sprinkles",
+            "npm:autoprefixer",
+            "npm:postcss",
+            "npm:react-dom",
+            "npm:typescript",
+            "npm:clsx"
+          ]
+        },
+        {
+          "file": "packages/react/components/button/src/Button.tsx",
+          "hash": "9262264931922970121"
+        },
+        {
+          "file": "packages/react/components/button/src/index.ts",
+          "hash": "8409040364927157818"
+        },
+        {
+          "file": "packages/react/components/button/src/style.css.ts",
+          "hash": "5900490221569276631"
+        },
+        {
+          "file": "packages/react/components/button/src/types.ts",
+          "hash": "5261578155279553024"
+        },
+        {
+          "file": "packages/react/components/button/tsconfig.json",
+          "hash": "10344179325425879767"
+        }
+      ],
+      "@design/esbuild-config": [
+        {
+          "file": "packages/esbuild-config/README.md",
+          "hash": "6886952344311067916"
+        },
+        {
+          "file": "packages/esbuild-config/index.js",
+          "hash": "219371835848018192"
+        },
+        {
+          "file": "packages/esbuild-config/package.json",
+          "hash": "5126038692030175162",
+          "deps": [
+            "npm:esbuild"
+          ]
         }
       ],
       "@design/react-components-layout": [
@@ -248,6 +233,73 @@
           "file": "packages/react/components/layout/tsconfig.json",
           "hash": "10344179325425879767"
         }
+      ],
+      "@design/storybook": [
+        {
+          "file": "services/storybook/.storybook/main.js",
+          "hash": "4636232379943974874"
+        },
+        {
+          "file": "services/storybook/.storybook/preview.js",
+          "hash": "13967948772147123675"
+        },
+        {
+          "file": "services/storybook/.storybook/vitest.setup.js",
+          "hash": "12306884984581110654"
+        },
+        {
+          "file": "services/storybook/README.md",
+          "hash": "2624393197388313932"
+        },
+        {
+          "file": "services/storybook/package.json",
+          "hash": "4960569148486264352",
+          "deps": [
+            "npm:@chromatic-com/storybook",
+            "@design/react-components-button",
+            "@design/react-components-layout",
+            "@design/themes",
+            "npm:@storybook/addon-essentials",
+            "npm:@storybook/addon-onboarding",
+            "npm:@storybook/blocks",
+            "npm:@storybook/experimental-addon-test",
+            "npm:@storybook/react",
+            "npm:@storybook/react-vite",
+            "npm:@storybook/test",
+            "npm:@vitest/browser",
+            "npm:@vitest/coverage-v8",
+            "npm:playwright",
+            "npm:prop-types",
+            "npm:storybook",
+            "npm:storybook-addon-root-attributes",
+            "npm:vite",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "services/storybook/stories/ReactComponents/Button/Button.stories.tsx",
+          "hash": "10762879475713216490"
+        },
+        {
+          "file": "services/storybook/stories/ReactComponents/Layout/Box.stories.tsx",
+          "hash": "581852115420615072"
+        },
+        {
+          "file": "services/storybook/stories/ReactComponents/Layout/Divider.stories.tsx",
+          "hash": "8022903854489763433"
+        },
+        {
+          "file": "services/storybook/stories/ReactComponents/Layout/Flex.stories.tsx",
+          "hash": "7711119180040722455"
+        },
+        {
+          "file": "services/storybook/stories/ReactComponents/Layout/Text.stories.tsx",
+          "hash": "14400922439473532413"
+        },
+        {
+          "file": "services/storybook/vitest.config.js",
+          "hash": "13967297142312120885"
+        }
       ]
     },
     "nonProjectFiles": [
@@ -293,7 +345,7 @@
       },
       {
         "file": "yarn.lock",
-        "hash": "4288135683034262693"
+        "hash": "7990390238668772682"
       }
     ]
   }

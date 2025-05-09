@@ -349,6 +349,31 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@design/react-components-button@workspace:^, @design/react-components-button@workspace:packages/react/components/button":
+  version: 0.0.0-use.local
+  resolution: "@design/react-components-button@workspace:packages/react/components/button"
+  dependencies:
+    "@design/esbuild-config": "workspace:^"
+    "@design/themes": "workspace:^"
+    "@types/react": "npm:^18.2.21"
+    "@types/react-dom": "npm:^18.2.7"
+    "@vanilla-extract/css": "npm:^1.13.0"
+    "@vanilla-extract/dynamic": "npm:^2.1.2"
+    "@vanilla-extract/esbuild-plugin": "npm:^2.3.0"
+    "@vanilla-extract/recipes": "npm:^0.5.5"
+    "@vanilla-extract/sprinkles": "npm:^1.6.3"
+    autoprefixer: "npm:^10.4.15"
+    clsx: "npm:^2.1.1"
+    postcss: "npm:^8.4.29"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    typescript: "npm:^5.2.2"
+  peerDependencies:
+    "@design/themes": "workspace:^"
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
 "@design/react-components-layout@workspace:^, @design/react-components-layout@workspace:packages/react/components/layout":
   version: 0.0.0-use.local
   resolution: "@design/react-components-layout@workspace:packages/react/components/layout"
@@ -378,6 +403,7 @@ __metadata:
   resolution: "@design/storybook@workspace:services/storybook"
   dependencies:
     "@chromatic-com/storybook": "npm:^3"
+    "@design/react-components-button": "workspace:^"
     "@design/react-components-layout": "workspace:^"
     "@design/themes": "workspace:^"
     "@storybook/addon-essentials": "npm:^8.6.12"
@@ -2231,6 +2257,15 @@ __metadata:
     modern-ahocorasick: "npm:^1.0.0"
     picocolors: "npm:^1.0.0"
   checksum: 10c0/96b646ea2fc2e1ac7809305d51995f38abaa6a3e6c55b4d228d498f01e33f4a23254e3e4620094c335234bfe178c79a0bfcbdf0dd1faab41aaae237a8e439925
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/dynamic@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "@vanilla-extract/dynamic@npm:2.1.2"
+  dependencies:
+    "@vanilla-extract/private": "npm:^1.0.6"
+  checksum: 10c0/7361863bbc1260fda447be80e888e3ad5dea09957651288d7aba81ba7f59594d11476a840c9162adc452f9a43dbc379b58621b5b500a49f537b0efc7737aac9c
   languageName: node
   linkType: hard
 

@@ -1,5 +1,116 @@
 {
   "nodes": {
+    "@design/react-components-button": {
+      "name": "@design/react-components-button",
+      "type": "lib",
+      "data": {
+        "root": "packages/react/components/button",
+        "name": "@design/react-components-button",
+        "projectType": "library",
+        "tags": [
+          "npm:public"
+        ],
+        "metadata": {
+          "targetGroups": {
+            "NPM Scripts": [
+              "build",
+              "build:js",
+              "build:type",
+              "clean",
+              "dev"
+            ]
+          },
+          "js": {
+            "packageName": "@design/react-components-button",
+            "packageExports": {
+              ".": {
+                "types": "./dist/index.d.ts",
+                "import": "./dist/index.js",
+                "require": "./dist/index.cjs"
+              },
+              "./style.css": "./dist/index.css"
+            },
+            "packageMain": "dist/index.js",
+            "isInPackageManagerWorkspaces": true
+          }
+        },
+        "targets": {
+          "build": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build"
+            },
+            "metadata": {
+              "scriptContent": "yarn clean && yarn build:js && yarn build:type && yarn build:css",
+              "runCommand": "yarn build"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "dependsOn": [
+              "^build"
+            ]
+          },
+          "build:js": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:js"
+            },
+            "metadata": {
+              "scriptContent": "node build.js",
+              "runCommand": "yarn build:js"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build:type": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:type"
+            },
+            "metadata": {
+              "scriptContent": "yarn tsc --emitDeclarationOnly",
+              "runCommand": "yarn build:type"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "clean": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "clean"
+            },
+            "metadata": {
+              "scriptContent": "rm -rf dist",
+              "runCommand": "yarn clean"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "dev": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "dev"
+            },
+            "metadata": {
+              "scriptContent": "yarn build:js --watch && yarn build:type --watch",
+              "runCommand": "yarn dev"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "nx-release-publish": {
+            "executor": "@nx/js:release-publish",
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "options": {},
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
     "@design/react-components-layout": {
       "name": "@design/react-components-layout",
       "type": "lib",
@@ -2358,6 +2469,15 @@
         "version": "1.17.1",
         "packageName": "@vanilla-extract/css",
         "hash": "10c0/96b646ea2fc2e1ac7809305d51995f38abaa6a3e6c55b4d228d498f01e33f4a23254e3e4620094c335234bfe178c79a0bfcbdf0dd1faab41aaae237a8e439925"
+      }
+    },
+    "npm:@vanilla-extract/dynamic": {
+      "type": "npm",
+      "name": "npm:@vanilla-extract/dynamic",
+      "data": {
+        "version": "2.1.2",
+        "packageName": "@vanilla-extract/dynamic",
+        "hash": "10c0/7361863bbc1260fda447be80e888e3ad5dea09957651288d7aba81ba7f59594d11476a840c9162adc452f9a43dbc379b58621b5b500a49f537b0efc7737aac9c"
       }
     },
     "npm:@vanilla-extract/esbuild-plugin": {
@@ -7591,6 +7711,83 @@
     }
   },
   "dependencies": {
+    "@design/react-components-button": [
+      {
+        "source": "@design/react-components-button",
+        "target": "@design/themes",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-button",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-button",
+        "target": "@design/esbuild-config",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-button",
+        "target": "npm:@types/react",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-button",
+        "target": "npm:@types/react-dom",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-button",
+        "target": "npm:@vanilla-extract/css",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-button",
+        "target": "npm:@vanilla-extract/dynamic",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-button",
+        "target": "npm:@vanilla-extract/esbuild-plugin",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-button",
+        "target": "npm:@vanilla-extract/recipes",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-button",
+        "target": "npm:@vanilla-extract/sprinkles",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-button",
+        "target": "npm:autoprefixer",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-button",
+        "target": "npm:postcss",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-button",
+        "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-button",
+        "target": "npm:typescript",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-button",
+        "target": "npm:clsx",
+        "type": "static"
+      }
+    ],
     "@design/react-components-layout": [
       {
         "source": "@design/react-components-layout",
@@ -7674,6 +7871,11 @@
       {
         "source": "@design/storybook",
         "target": "npm:@chromatic-com/storybook",
+        "type": "static"
+      },
+      {
+        "source": "@design/storybook",
+        "target": "@design/react-components-button",
         "type": "static"
       },
       {
@@ -9699,6 +9901,13 @@
       {
         "source": "npm:@vanilla-extract/css",
         "target": "npm:picocolors",
+        "type": "static"
+      }
+    ],
+    "npm:@vanilla-extract/dynamic": [
+      {
+        "source": "npm:@vanilla-extract/dynamic",
+        "target": "npm:@vanilla-extract/private",
         "type": "static"
       }
     ],
@@ -15970,5 +16179,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1746749159674
+  "computedAt": 1746768691945
 }
