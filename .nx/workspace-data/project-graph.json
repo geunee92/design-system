@@ -1186,7 +1186,9 @@
               "test",
               "test:ui",
               "storybook",
-              "build"
+              "build",
+              "build-storybook",
+              "chromatic"
             ]
           },
           "js": {
@@ -1245,6 +1247,30 @@
             "dependsOn": [
               "^build"
             ]
+          },
+          "build-storybook": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build-storybook"
+            },
+            "metadata": {
+              "scriptContent": "storybook build",
+              "runCommand": "yarn build-storybook"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "chromatic": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "chromatic"
+            },
+            "metadata": {
+              "scriptContent": "npx chromatic --project-token=chpt_fcfc1daad4d6803",
+              "runCommand": "yarn chromatic"
+            },
+            "configurations": {},
+            "parallelism": true
           },
           "nx-release-publish": {
             "executor": "@nx/js:release-publish",
@@ -9469,6 +9495,11 @@
       {
         "source": "@design/storybook",
         "target": "npm:@vitest/ui",
+        "type": "static"
+      },
+      {
+        "source": "@design/storybook",
+        "target": "npm:chromatic",
         "type": "static"
       },
       {
@@ -17890,5 +17921,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1747036138628
+  "computedAt": 1747053603404
 }

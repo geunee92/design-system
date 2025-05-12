@@ -2800,6 +2800,14 @@
       "services/storybook/package.json",
       "nx/core/package-json"
     ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
     "metadata.js": [
       "services/storybook/package.json",
       "nx/core/package-json"
@@ -2925,6 +2933,62 @@
       "nx/core/package-json"
     ],
     "targets.build.metadata.runCommand": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build-storybook": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build-storybook.executor": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build-storybook.options": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build-storybook.metadata": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build-storybook.options.script": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build-storybook.metadata.scriptContent": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build-storybook.metadata.runCommand": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.chromatic": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.chromatic.executor": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.chromatic.options": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.chromatic.metadata": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.chromatic.options.script": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.chromatic.metadata.scriptContent": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.chromatic.metadata.runCommand": [
       "services/storybook/package.json",
       "nx/core/package-json"
     ],
