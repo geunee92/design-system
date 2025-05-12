@@ -2792,6 +2792,14 @@
       "services/storybook/package.json",
       "nx/core/package-json"
     ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
     "metadata.js": [
       "services/storybook/package.json",
       "nx/core/package-json"
@@ -2805,6 +2813,62 @@
       "nx/core/package-json"
     ],
     "targets": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ui": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ui.executor": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ui.options": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ui.metadata": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ui.options.script": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ui.metadata.scriptContent": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ui.metadata.runCommand": [
       "services/storybook/package.json",
       "nx/core/package-json"
     ],
