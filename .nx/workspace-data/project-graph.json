@@ -555,6 +555,117 @@
         "implicitDependencies": []
       }
     },
+    "@design/react-components-toast": {
+      "name": "@design/react-components-toast",
+      "type": "lib",
+      "data": {
+        "root": "packages/react/components/toast",
+        "name": "@design/react-components-toast",
+        "projectType": "library",
+        "tags": [
+          "npm:public"
+        ],
+        "metadata": {
+          "targetGroups": {
+            "NPM Scripts": [
+              "build",
+              "build:js",
+              "build:type",
+              "clean",
+              "dev"
+            ]
+          },
+          "js": {
+            "packageName": "@design/react-components-toast",
+            "packageExports": {
+              ".": {
+                "types": "./dist/index.d.ts",
+                "import": "./dist/index.js",
+                "require": "./dist/index.cjs"
+              },
+              "./style.css": "./dist/index.css"
+            },
+            "packageMain": "dist/index.js",
+            "isInPackageManagerWorkspaces": true
+          }
+        },
+        "targets": {
+          "build": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build"
+            },
+            "metadata": {
+              "scriptContent": "yarn clean && yarn build:js && yarn build:type && yarn build:css",
+              "runCommand": "yarn build"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "dependsOn": [
+              "^build"
+            ]
+          },
+          "build:js": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:js"
+            },
+            "metadata": {
+              "scriptContent": "node build.js",
+              "runCommand": "yarn build:js"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build:type": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:type"
+            },
+            "metadata": {
+              "scriptContent": "yarn tsc --emitDeclarationOnly",
+              "runCommand": "yarn build:type"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "clean": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "clean"
+            },
+            "metadata": {
+              "scriptContent": "rm -rf dist",
+              "runCommand": "yarn clean"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "dev": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "dev"
+            },
+            "metadata": {
+              "scriptContent": "yarn build:js --watch && yarn build:type --watch",
+              "runCommand": "yarn dev"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "nx-release-publish": {
+            "executor": "@nx/js:release-publish",
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "options": {},
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
     "@design/react-hooks-button": {
       "name": "@design/react-hooks-button",
       "type": "lib",
@@ -8889,6 +9000,83 @@
         "type": "static"
       }
     ],
+    "@design/react-components-toast": [
+      {
+        "source": "@design/react-components-toast",
+        "target": "@design/themes",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-toast",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-toast",
+        "target": "@design/esbuild-config",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-toast",
+        "target": "npm:@types/react",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-toast",
+        "target": "npm:@types/react-dom",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-toast",
+        "target": "npm:@vanilla-extract/css",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-toast",
+        "target": "npm:@vanilla-extract/dynamic",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-toast",
+        "target": "npm:@vanilla-extract/esbuild-plugin",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-toast",
+        "target": "npm:@vanilla-extract/recipes",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-toast",
+        "target": "npm:@vanilla-extract/sprinkles",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-toast",
+        "target": "npm:autoprefixer",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-toast",
+        "target": "npm:postcss",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-toast",
+        "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-toast",
+        "target": "npm:typescript",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-toast",
+        "target": "npm:clsx",
+        "type": "static"
+      }
+    ],
     "@design/react-hooks-button": [
       {
         "source": "@design/react-hooks-button",
@@ -9053,31 +9241,6 @@
       {
         "source": "@design/storybook",
         "target": "npm:@chromatic-com/storybook",
-        "type": "static"
-      },
-      {
-        "source": "@design/storybook",
-        "target": "@design/react-components-accordion",
-        "type": "static"
-      },
-      {
-        "source": "@design/storybook",
-        "target": "@design/react-components-button",
-        "type": "static"
-      },
-      {
-        "source": "@design/storybook",
-        "target": "@design/react-components-input",
-        "type": "static"
-      },
-      {
-        "source": "@design/storybook",
-        "target": "@design/react-components-layout",
-        "type": "static"
-      },
-      {
-        "source": "@design/storybook",
-        "target": "@design/react-hooks-button",
         "type": "static"
       },
       {
@@ -17376,5 +17539,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1747025204499
+  "computedAt": 1747028564547
 }

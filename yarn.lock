@@ -478,6 +478,31 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@design/react-components-toast@workspace:packages/react/components/toast":
+  version: 0.0.0-use.local
+  resolution: "@design/react-components-toast@workspace:packages/react/components/toast"
+  dependencies:
+    "@design/esbuild-config": "workspace:^"
+    "@design/themes": "workspace:^"
+    "@types/react": "npm:^18.2.21"
+    "@types/react-dom": "npm:^18.2.7"
+    "@vanilla-extract/css": "npm:^1.13.0"
+    "@vanilla-extract/dynamic": "npm:^2.1.2"
+    "@vanilla-extract/esbuild-plugin": "npm:^2.3.0"
+    "@vanilla-extract/recipes": "npm:^0.5.5"
+    "@vanilla-extract/sprinkles": "npm:^1.6.3"
+    autoprefixer: "npm:^10.4.15"
+    clsx: "npm:^2.1.1"
+    postcss: "npm:^8.4.29"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    typescript: "npm:^5.2.2"
+  peerDependencies:
+    "@design/themes": "workspace:^"
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
 "@design/react-hooks-button@workspace:^, @design/react-hooks-button@workspace:packages/react/hooks/button":
   version: 0.0.0-use.local
   resolution: "@design/react-hooks-button@workspace:packages/react/hooks/button"
