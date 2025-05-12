@@ -349,7 +349,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@design/react-components-accordion@workspace:^, @design/react-components-accordion@workspace:packages/react/components/accordion":
+"@design/react-components-accordion@workspace:packages/react/components/accordion":
   version: 0.0.0-use.local
   resolution: "@design/react-components-accordion@workspace:packages/react/components/accordion"
   dependencies:
@@ -375,7 +375,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@design/react-components-button@workspace:^, @design/react-components-button@workspace:packages/react/components/button":
+"@design/react-components-button@workspace:packages/react/components/button":
   version: 0.0.0-use.local
   resolution: "@design/react-components-button@workspace:packages/react/components/button"
   dependencies:
@@ -401,7 +401,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@design/react-components-input@workspace:^, @design/react-components-input@workspace:packages/react/components/input":
+"@design/react-components-input@workspace:packages/react/components/input":
   version: 0.0.0-use.local
   resolution: "@design/react-components-input@workspace:packages/react/components/input"
   dependencies:
@@ -427,7 +427,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@design/react-components-layout@workspace:^, @design/react-components-layout@workspace:packages/react/components/layout":
+"@design/react-components-layout@workspace:packages/react/components/layout":
   version: 0.0.0-use.local
   resolution: "@design/react-components-layout@workspace:packages/react/components/layout"
   dependencies:
@@ -436,6 +436,33 @@ __metadata:
     "@types/react": "npm:^18.2.21"
     "@types/react-dom": "npm:^18.2.7"
     "@vanilla-extract/css": "npm:^1.13.0"
+    "@vanilla-extract/esbuild-plugin": "npm:^2.3.0"
+    "@vanilla-extract/recipes": "npm:^0.5.5"
+    "@vanilla-extract/sprinkles": "npm:^1.6.3"
+    autoprefixer: "npm:^10.4.15"
+    clsx: "npm:^2.1.1"
+    postcss: "npm:^8.4.29"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    typescript: "npm:^5.2.2"
+  peerDependencies:
+    "@design/themes": "workspace:^"
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
+"@design/react-components-select@workspace:packages/react/components/select":
+  version: 0.0.0-use.local
+  resolution: "@design/react-components-select@workspace:packages/react/components/select"
+  dependencies:
+    "@design/esbuild-config": "workspace:^"
+    "@design/react-hooks-input": "workspace:^"
+    "@design/react-hooks-select": "workspace:^"
+    "@design/themes": "workspace:^"
+    "@types/react": "npm:^18.2.21"
+    "@types/react-dom": "npm:^18.2.7"
+    "@vanilla-extract/css": "npm:^1.13.0"
+    "@vanilla-extract/dynamic": "npm:^2.1.2"
     "@vanilla-extract/esbuild-plugin": "npm:^2.3.0"
     "@vanilla-extract/recipes": "npm:^0.5.5"
     "@vanilla-extract/sprinkles": "npm:^1.6.3"
@@ -484,6 +511,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@design/react-hooks-select@workspace:^, @design/react-hooks-select@workspace:packages/react/hooks/select":
+  version: 0.0.0-use.local
+  resolution: "@design/react-hooks-select@workspace:packages/react/hooks/select"
+  dependencies:
+    "@design/esbuild-config": "workspace:^"
+    "@types/react": "npm:^18.2.21"
+    "@types/react-dom": "npm:^18.2.7"
+    clsx: "npm:^2.0.0"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    typescript: "npm:^5.2.2"
+  peerDependencies:
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
 "@design/react-hooks-toggle@workspace:^, @design/react-hooks-toggle@workspace:packages/react/hooks/toggle":
   version: 0.0.0-use.local
   resolution: "@design/react-hooks-toggle@workspace:packages/react/hooks/toggle"
@@ -505,11 +548,6 @@ __metadata:
   resolution: "@design/storybook@workspace:services/storybook"
   dependencies:
     "@chromatic-com/storybook": "npm:^3"
-    "@design/react-components-accordion": "workspace:^"
-    "@design/react-components-button": "workspace:^"
-    "@design/react-components-input": "workspace:^"
-    "@design/react-components-layout": "workspace:^"
-    "@design/react-hooks-button": "workspace:^"
     "@design/themes": "workspace:^"
     "@storybook/addon-essentials": "npm:^8.6.12"
     "@storybook/addon-onboarding": "npm:^8.6.12"
