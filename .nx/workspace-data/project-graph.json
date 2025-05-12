@@ -333,6 +333,117 @@
         "implicitDependencies": []
       }
     },
+    "@design/react-components-input": {
+      "name": "@design/react-components-input",
+      "type": "lib",
+      "data": {
+        "root": "packages/react/components/input",
+        "name": "@design/react-components-input",
+        "projectType": "library",
+        "tags": [
+          "npm:public"
+        ],
+        "metadata": {
+          "targetGroups": {
+            "NPM Scripts": [
+              "build",
+              "build:js",
+              "build:type",
+              "clean",
+              "dev"
+            ]
+          },
+          "js": {
+            "packageName": "@design/react-components-input",
+            "packageExports": {
+              ".": {
+                "types": "./dist/index.d.ts",
+                "import": "./dist/index.js",
+                "require": "./dist/index.cjs"
+              },
+              "./style.css": "./dist/index.css"
+            },
+            "packageMain": "dist/index.js",
+            "isInPackageManagerWorkspaces": true
+          }
+        },
+        "targets": {
+          "build": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build"
+            },
+            "metadata": {
+              "scriptContent": "yarn clean && yarn build:js && yarn build:type && yarn build:css",
+              "runCommand": "yarn build"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "dependsOn": [
+              "^build"
+            ]
+          },
+          "build:js": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:js"
+            },
+            "metadata": {
+              "scriptContent": "node build.js",
+              "runCommand": "yarn build:js"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build:type": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:type"
+            },
+            "metadata": {
+              "scriptContent": "yarn tsc --emitDeclarationOnly",
+              "runCommand": "yarn build:type"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "clean": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "clean"
+            },
+            "metadata": {
+              "scriptContent": "rm -rf dist",
+              "runCommand": "yarn clean"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "dev": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "dev"
+            },
+            "metadata": {
+              "scriptContent": "yarn build:js --watch && yarn build:type --watch",
+              "runCommand": "yarn dev"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "nx-release-publish": {
+            "executor": "@nx/js:release-publish",
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "options": {},
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
     "@design/react-hooks-button": {
       "name": "@design/react-hooks-button",
       "type": "lib",
@@ -465,6 +576,116 @@
           },
           "js": {
             "packageName": "@design/react-hooks-toggle",
+            "packageExports": {
+              ".": {
+                "types": "./dist/index.d.ts",
+                "import": "./dist/index.js",
+                "require": "./dist/index.cjs"
+              }
+            },
+            "packageMain": "dist/index.js",
+            "isInPackageManagerWorkspaces": true
+          }
+        },
+        "targets": {
+          "build": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build"
+            },
+            "metadata": {
+              "scriptContent": "yarn clean && yarn build:js && yarn build:type && yarn build:css",
+              "runCommand": "yarn build"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "dependsOn": [
+              "^build"
+            ]
+          },
+          "build:js": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:js"
+            },
+            "metadata": {
+              "scriptContent": "node build.js",
+              "runCommand": "yarn build:js"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build:type": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:type"
+            },
+            "metadata": {
+              "scriptContent": "yarn tsc --emitDeclarationOnly",
+              "runCommand": "yarn build:type"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "clean": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "clean"
+            },
+            "metadata": {
+              "scriptContent": "rm -rf dist",
+              "runCommand": "yarn clean"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "dev": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "dev"
+            },
+            "metadata": {
+              "scriptContent": "yarn build:js --watch && yarn build:type --watch",
+              "runCommand": "yarn dev"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "nx-release-publish": {
+            "executor": "@nx/js:release-publish",
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "options": {},
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "@design/react-hooks-input": {
+      "name": "@design/react-hooks-input",
+      "type": "lib",
+      "data": {
+        "root": "packages/react/hooks/input",
+        "name": "@design/react-hooks-input",
+        "projectType": "library",
+        "tags": [
+          "npm:public"
+        ],
+        "metadata": {
+          "targetGroups": {
+            "NPM Scripts": [
+              "build",
+              "build:js",
+              "build:type",
+              "clean",
+              "dev"
+            ]
+          },
+          "js": {
+            "packageName": "@design/react-hooks-input",
             "packageExports": {
               ".": {
                 "types": "./dist/index.d.ts",
@@ -8278,6 +8499,88 @@
         "type": "static"
       }
     ],
+    "@design/react-components-input": [
+      {
+        "source": "@design/react-components-input",
+        "target": "@design/themes",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-input",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-input",
+        "target": "@design/esbuild-config",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-input",
+        "target": "@design/react-hooks-input",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-input",
+        "target": "npm:@types/react",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-input",
+        "target": "npm:@types/react-dom",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-input",
+        "target": "npm:@vanilla-extract/css",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-input",
+        "target": "npm:@vanilla-extract/dynamic",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-input",
+        "target": "npm:@vanilla-extract/esbuild-plugin",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-input",
+        "target": "npm:@vanilla-extract/recipes",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-input",
+        "target": "npm:@vanilla-extract/sprinkles",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-input",
+        "target": "npm:autoprefixer",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-input",
+        "target": "npm:postcss",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-input",
+        "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-input",
+        "target": "npm:typescript",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-components-input",
+        "target": "npm:clsx",
+        "type": "static"
+      }
+    ],
     "@design/react-hooks-button": [
       {
         "source": "@design/react-hooks-button",
@@ -8357,6 +8660,43 @@
         "type": "static"
       }
     ],
+    "@design/react-hooks-input": [
+      {
+        "source": "@design/react-hooks-input",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-hooks-input",
+        "target": "@design/esbuild-config",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-hooks-input",
+        "target": "npm:@types/react",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-hooks-input",
+        "target": "npm:@types/react-dom",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-hooks-input",
+        "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-hooks-input",
+        "target": "npm:typescript",
+        "type": "static"
+      },
+      {
+        "source": "@design/react-hooks-input",
+        "target": "npm:clsx",
+        "type": "static"
+      }
+    ],
     "@design/esbuild-config": [
       {
         "source": "@design/esbuild-config",
@@ -8378,6 +8718,11 @@
       {
         "source": "@design/storybook",
         "target": "@design/react-components-button",
+        "type": "static"
+      },
+      {
+        "source": "@design/storybook",
+        "target": "@design/react-components-input",
         "type": "static"
       },
       {
@@ -16686,5 +17031,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1747008854594
+  "computedAt": 1747013358153
 }
