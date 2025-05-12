@@ -4,5 +4,9 @@ import { ToastPayload } from "./types";
 export const Toast = (props: ToastPayload) => {
   const { message } = props;
 
-  return <div className={toastStyle}>{message}</div>;
+  return (
+    <div id="toast-container" className={toastStyle}>
+      {message}
+    </div>
+  );
 };
