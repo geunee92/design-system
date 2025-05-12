@@ -1,0 +1,1 @@
+{"/":{"title":"Index","data":{"":"#Design System\nDesign System은 theme과 React UI Libarary로 구성되어 있습니다."}},"/themes/Installation":{"title":"Installation","data":{"":"yarn add @fastcampus/themes"}},"/hooks":{"title":"@design/react-hooks 소개","data":{"":"design은 hooks를 제공하고 있습니다.\nStyle을 제외한 기능만 사용을 원할 경우 hooks를 설치하여 사용하시면 됩니다."}}}
