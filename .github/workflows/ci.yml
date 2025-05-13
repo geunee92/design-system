@@ -20,7 +20,7 @@ jobs:
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
         uses: nrwl/nx-set-shas@v3
 
-      - name: Setup Node.js
+      - name: Setup Node.js 18
         uses: actions/setup-node@v3
         with:
           node-version: 16
