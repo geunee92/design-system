@@ -10,212 +10,6 @@
   },
   "fileMap": {
     "projectFileMap": {
-      "@design/themes": [
-        {
-          "file": "packages/themes/build.js",
-          "hash": "11313241788351511933"
-        },
-        {
-          "file": "packages/themes/package.json",
-          "hash": "15447323209807869585",
-          "deps": [
-            "@design/esbuild-config",
-            "npm:typescript"
-          ]
-        },
-        {
-          "file": "packages/themes/scripts/build-css-module.js",
-          "hash": "1209387752334535971"
-        },
-        {
-          "file": "packages/themes/src/classes/index.ts",
-          "hash": "14874153686921477232"
-        },
-        {
-          "file": "packages/themes/src/classes/typography.ts",
-          "hash": "4613592670763236173"
-        },
-        {
-          "file": "packages/themes/src/index.ts",
-          "hash": "5051740342712927388"
-        },
-        {
-          "file": "packages/themes/src/variables/box.ts",
-          "hash": "17415301785716516678"
-        },
-        {
-          "file": "packages/themes/src/variables/colors/index.ts",
-          "hash": "16067044052561609752"
-        },
-        {
-          "file": "packages/themes/src/variables/colors/scale.ts",
-          "hash": "7227875050283308958"
-        },
-        {
-          "file": "packages/themes/src/variables/colors/static/dark.ts",
-          "hash": "681337314988286385"
-        },
-        {
-          "file": "packages/themes/src/variables/colors/static/index.ts",
-          "hash": "17639848047638776056"
-        },
-        {
-          "file": "packages/themes/src/variables/colors/static/light.ts",
-          "hash": "5111065768491833496"
-        },
-        {
-          "file": "packages/themes/src/variables/index.ts",
-          "hash": "17288868138055620940"
-        },
-        {
-          "file": "packages/themes/src/variables/typography.ts",
-          "hash": "15749593622752628120"
-        },
-        {
-          "file": "packages/themes/tsconfig.json",
-          "hash": "10248009443664204963"
-        }
-      ],
-      "@design/react-components-accordion": [
-        {
-          "file": "packages/react/components/accordion/build.js",
-          "hash": "14847324200671330000"
-        },
-        {
-          "file": "packages/react/components/accordion/package.json",
-          "hash": "3095650003050820874",
-          "deps": [
-            "@design/themes",
-            "npm:react",
-            "@design/esbuild-config",
-            "@design/react-hooks-button",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:@vanilla-extract/css",
-            "npm:@vanilla-extract/dynamic",
-            "npm:@vanilla-extract/esbuild-plugin",
-            "npm:@vanilla-extract/recipes",
-            "npm:@vanilla-extract/sprinkles",
-            "npm:autoprefixer",
-            "npm:postcss",
-            "npm:react-dom",
-            "npm:typescript",
-            "npm:clsx"
-          ]
-        },
-        {
-          "file": "packages/react/components/accordion/src/Accordion.tsx",
-          "hash": "15257389082860536409"
-        },
-        {
-          "file": "packages/react/components/accordion/src/AccordionButton.tsx",
-          "hash": "13455860745340583345"
-        },
-        {
-          "file": "packages/react/components/accordion/src/AccordionContext.tsx",
-          "hash": "16134208989620431416"
-        },
-        {
-          "file": "packages/react/components/accordion/src/AccordionItem.tsx",
-          "hash": "18254717777939924557"
-        },
-        {
-          "file": "packages/react/components/accordion/src/AccordionPanel.tsx",
-          "hash": "13604674546571647425"
-        },
-        {
-          "file": "packages/react/components/accordion/src/index.ts",
-          "hash": "6692487404382574495"
-        },
-        {
-          "file": "packages/react/components/accordion/src/style.css.ts",
-          "hash": "18073659729434534248"
-        },
-        {
-          "file": "packages/react/components/accordion/src/types.ts",
-          "hash": "1779933654789481147"
-        },
-        {
-          "file": "packages/react/components/accordion/tsconfig.json",
-          "hash": "10344179325425879767"
-        }
-      ],
-      "@design/react-components-toast": [
-        {
-          "file": "packages/react/components/toast/build.js",
-          "hash": "14847324200671330000"
-        },
-        {
-          "file": "packages/react/components/toast/package.json",
-          "hash": "5842196916810700592",
-          "deps": [
-            "@design/themes",
-            "npm:react",
-            "@design/esbuild-config",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:@vanilla-extract/css",
-            "npm:@vanilla-extract/dynamic",
-            "npm:@vanilla-extract/esbuild-plugin",
-            "npm:@vanilla-extract/recipes",
-            "npm:@vanilla-extract/sprinkles",
-            "npm:autoprefixer",
-            "npm:postcss",
-            "npm:react-dom",
-            "npm:typescript",
-            "npm:clsx"
-          ]
-        },
-        {
-          "file": "packages/react/components/toast/src/Toast.tsx",
-          "hash": "8792377838859614619"
-        },
-        {
-          "file": "packages/react/components/toast/src/ToastContainer.tsx",
-          "hash": "7002435235804459319"
-        },
-        {
-          "file": "packages/react/components/toast/src/ToastContext.ts",
-          "hash": "2944042911600349850"
-        },
-        {
-          "file": "packages/react/components/toast/src/ToastProvider.tsx",
-          "hash": "1563059851088122764"
-        },
-        {
-          "file": "packages/react/components/toast/src/index.ts",
-          "hash": "7250574523632467111"
-        },
-        {
-          "file": "packages/react/components/toast/src/style.css.ts",
-          "hash": "15453810563803982080"
-        },
-        {
-          "file": "packages/react/components/toast/src/types.ts",
-          "hash": "13481647225971472081"
-        },
-        {
-          "file": "packages/react/components/toast/tsconfig.json",
-          "hash": "10344179325425879767"
-        }
-      ],
-      "@design/esbuild-config": [
-        {
-          "file": "packages/esbuild-config/README.md",
-          "hash": "6886952344311067916"
-        },
-        {
-          "file": "packages/esbuild-config/index.js",
-          "hash": "219371835848018192"
-        },
-        {
-          "file": "packages/esbuild-config/package.json",
-          "hash": "5126038692030175162",
-          "deps": [
-            "npm:esbuild"
-          ]
-        }
-      ],
       "@design/react-components-layout": [
         {
           "file": "packages/react/components/layout/build.js",
@@ -326,6 +120,210 @@
           "hash": "10344179325425879767"
         }
       ],
+      "@design/react-components-select": [
+        {
+          "file": "packages/react/components/select/build.js",
+          "hash": "14847324200671330000"
+        },
+        {
+          "file": "packages/react/components/select/package.json",
+          "hash": "7969846626549654892",
+          "deps": [
+            "@design/themes",
+            "npm:react",
+            "@design/esbuild-config",
+            "@design/react-hooks-input",
+            "@design/react-hooks-select",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vanilla-extract/css",
+            "npm:@vanilla-extract/dynamic",
+            "npm:@vanilla-extract/esbuild-plugin",
+            "npm:@vanilla-extract/recipes",
+            "npm:@vanilla-extract/sprinkles",
+            "npm:autoprefixer",
+            "npm:postcss",
+            "npm:react-dom",
+            "npm:typescript",
+            "npm:clsx"
+          ]
+        },
+        {
+          "file": "packages/react/components/select/src/Select.tsx",
+          "hash": "9666048680658306806"
+        },
+        {
+          "file": "packages/react/components/select/src/index.ts",
+          "hash": "9141684243305184125"
+        },
+        {
+          "file": "packages/react/components/select/src/style.css.ts",
+          "hash": "5848305323771943122"
+        },
+        {
+          "file": "packages/react/components/select/src/types.ts",
+          "hash": "12329603358765756774"
+        },
+        {
+          "file": "packages/react/components/select/tsconfig.json",
+          "hash": "10344179325425879767"
+        }
+      ],
+      "@design/react-components-input": [
+        {
+          "file": "packages/react/components/input/build.js",
+          "hash": "14847324200671330000"
+        },
+        {
+          "file": "packages/react/components/input/package.json",
+          "hash": "15812345649605719577",
+          "deps": [
+            "@design/themes",
+            "npm:react",
+            "@design/esbuild-config",
+            "@design/react-hooks-input",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vanilla-extract/css",
+            "npm:@vanilla-extract/dynamic",
+            "npm:@vanilla-extract/esbuild-plugin",
+            "npm:@vanilla-extract/recipes",
+            "npm:@vanilla-extract/sprinkles",
+            "npm:autoprefixer",
+            "npm:postcss",
+            "npm:react-dom",
+            "npm:typescript",
+            "npm:clsx"
+          ]
+        },
+        {
+          "file": "packages/react/components/input/src/Input.tsx",
+          "hash": "7607789197271007312"
+        },
+        {
+          "file": "packages/react/components/input/src/InputGroup.tsx",
+          "hash": "16067699914029800220"
+        },
+        {
+          "file": "packages/react/components/input/src/InputLeftAddon.tsx",
+          "hash": "10446725777033765429"
+        },
+        {
+          "file": "packages/react/components/input/src/index.ts",
+          "hash": "7206012316751655975"
+        },
+        {
+          "file": "packages/react/components/input/src/style.css.ts",
+          "hash": "3865540409912588610"
+        },
+        {
+          "file": "packages/react/components/input/src/types.ts",
+          "hash": "9489455935155138525"
+        },
+        {
+          "file": "packages/react/components/input/tsconfig.json",
+          "hash": "10344179325425879767"
+        }
+      ],
+      "@design/react-components-accordion": [
+        {
+          "file": "packages/react/components/accordion/build.js",
+          "hash": "14847324200671330000"
+        },
+        {
+          "file": "packages/react/components/accordion/package.json",
+          "hash": "3095650003050820874",
+          "deps": [
+            "@design/themes",
+            "npm:react",
+            "@design/esbuild-config",
+            "@design/react-hooks-button",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vanilla-extract/css",
+            "npm:@vanilla-extract/dynamic",
+            "npm:@vanilla-extract/esbuild-plugin",
+            "npm:@vanilla-extract/recipes",
+            "npm:@vanilla-extract/sprinkles",
+            "npm:autoprefixer",
+            "npm:postcss",
+            "npm:react-dom",
+            "npm:typescript",
+            "npm:clsx"
+          ]
+        },
+        {
+          "file": "packages/react/components/accordion/src/Accordion.tsx",
+          "hash": "15257389082860536409"
+        },
+        {
+          "file": "packages/react/components/accordion/src/AccordionButton.tsx",
+          "hash": "13455860745340583345"
+        },
+        {
+          "file": "packages/react/components/accordion/src/AccordionContext.tsx",
+          "hash": "16134208989620431416"
+        },
+        {
+          "file": "packages/react/components/accordion/src/AccordionItem.tsx",
+          "hash": "18254717777939924557"
+        },
+        {
+          "file": "packages/react/components/accordion/src/AccordionPanel.tsx",
+          "hash": "13604674546571647425"
+        },
+        {
+          "file": "packages/react/components/accordion/src/index.ts",
+          "hash": "6692487404382574495"
+        },
+        {
+          "file": "packages/react/components/accordion/src/style.css.ts",
+          "hash": "18073659729434534248"
+        },
+        {
+          "file": "packages/react/components/accordion/src/types.ts",
+          "hash": "1779933654789481147"
+        },
+        {
+          "file": "packages/react/components/accordion/tsconfig.json",
+          "hash": "10344179325425879767"
+        }
+      ],
+      "@design/react-hooks-toggle": [
+        {
+          "file": "packages/react/hooks/toggle/build.js",
+          "hash": "11313241788351511933"
+        },
+        {
+          "file": "packages/react/hooks/toggle/package.json",
+          "hash": "7527665168862678019",
+          "deps": [
+            "npm:react",
+            "@design/esbuild-config",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:react-dom",
+            "npm:typescript",
+            "npm:clsx"
+          ]
+        },
+        {
+          "file": "packages/react/hooks/toggle/src/index.ts",
+          "hash": "13190166400749655539"
+        },
+        {
+          "file": "packages/react/hooks/toggle/src/types.ts",
+          "hash": "13666444803187522029"
+        },
+        {
+          "file": "packages/react/hooks/toggle/src/useToggle.tsx",
+          "hash": "9256311866014801661"
+        },
+        {
+          "file": "packages/react/hooks/toggle/tsconfig.json",
+          "hash": "10344179325425879767"
+        }
+      ],
       "@design/react-hooks-input": [
         {
           "file": "packages/react/hooks/input/build.js",
@@ -359,6 +357,72 @@
         {
           "file": "packages/react/hooks/input/tsconfig.json",
           "hash": "10344179325425879767"
+        }
+      ],
+      "@design/themes": [
+        {
+          "file": "packages/themes/build.js",
+          "hash": "11313241788351511933"
+        },
+        {
+          "file": "packages/themes/package.json",
+          "hash": "15447323209807869585",
+          "deps": [
+            "@design/esbuild-config",
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "packages/themes/scripts/build-css-module.js",
+          "hash": "1209387752334535971"
+        },
+        {
+          "file": "packages/themes/src/classes/index.ts",
+          "hash": "14874153686921477232"
+        },
+        {
+          "file": "packages/themes/src/classes/typography.ts",
+          "hash": "4613592670763236173"
+        },
+        {
+          "file": "packages/themes/src/index.ts",
+          "hash": "5051740342712927388"
+        },
+        {
+          "file": "packages/themes/src/variables/box.ts",
+          "hash": "17415301785716516678"
+        },
+        {
+          "file": "packages/themes/src/variables/colors/index.ts",
+          "hash": "16067044052561609752"
+        },
+        {
+          "file": "packages/themes/src/variables/colors/scale.ts",
+          "hash": "7227875050283308958"
+        },
+        {
+          "file": "packages/themes/src/variables/colors/static/dark.ts",
+          "hash": "681337314988286385"
+        },
+        {
+          "file": "packages/themes/src/variables/colors/static/index.ts",
+          "hash": "17639848047638776056"
+        },
+        {
+          "file": "packages/themes/src/variables/colors/static/light.ts",
+          "hash": "5111065768491833496"
+        },
+        {
+          "file": "packages/themes/src/variables/index.ts",
+          "hash": "17288868138055620940"
+        },
+        {
+          "file": "packages/themes/src/variables/typography.ts",
+          "hash": "15749593622752628120"
+        },
+        {
+          "file": "packages/themes/tsconfig.json",
+          "hash": "10248009443664204963"
         }
       ],
       "@design/react-hooks-button": [
@@ -401,76 +465,6 @@
           "hash": "10344179325425879767"
         }
       ],
-      "@design/react-hooks-select": [
-        {
-          "file": "packages/react/hooks/select/build.js",
-          "hash": "11313241788351511933"
-        },
-        {
-          "file": "packages/react/hooks/select/package.json",
-          "hash": "4230504216859349397",
-          "deps": [
-            "npm:react",
-            "@design/esbuild-config",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:react-dom",
-            "npm:typescript",
-            "npm:clsx"
-          ]
-        },
-        {
-          "file": "packages/react/hooks/select/src/index.ts",
-          "hash": "5223736269965586498"
-        },
-        {
-          "file": "packages/react/hooks/select/src/types.ts",
-          "hash": "3698533023306847201"
-        },
-        {
-          "file": "packages/react/hooks/select/src/useSelect.tsx",
-          "hash": "10272838170998038664"
-        },
-        {
-          "file": "packages/react/hooks/select/tsconfig.json",
-          "hash": "10344179325425879767"
-        }
-      ],
-      "@design/react-hooks-toggle": [
-        {
-          "file": "packages/react/hooks/toggle/build.js",
-          "hash": "11313241788351511933"
-        },
-        {
-          "file": "packages/react/hooks/toggle/package.json",
-          "hash": "7527665168862678019",
-          "deps": [
-            "npm:react",
-            "@design/esbuild-config",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:react-dom",
-            "npm:typescript",
-            "npm:clsx"
-          ]
-        },
-        {
-          "file": "packages/react/hooks/toggle/src/index.ts",
-          "hash": "13190166400749655539"
-        },
-        {
-          "file": "packages/react/hooks/toggle/src/types.ts",
-          "hash": "13666444803187522029"
-        },
-        {
-          "file": "packages/react/hooks/toggle/src/useToggle.tsx",
-          "hash": "9256311866014801661"
-        },
-        {
-          "file": "packages/react/hooks/toggle/tsconfig.json",
-          "hash": "10344179325425879767"
-        }
-      ],
       "@design/storybook": [
         {
           "file": "services/storybook/.storybook/main.js",
@@ -490,7 +484,7 @@
         },
         {
           "file": "services/storybook/package.json",
-          "hash": "13766606314467580142",
+          "hash": "14548014633223337979",
           "deps": [
             "npm:@chromatic-com/storybook",
             "@design/themes",
@@ -582,20 +576,18 @@
           "hash": "12640478118144390273"
         }
       ],
-      "@design/react-components-select": [
+      "@design/react-components-toast": [
         {
-          "file": "packages/react/components/select/build.js",
+          "file": "packages/react/components/toast/build.js",
           "hash": "14847324200671330000"
         },
         {
-          "file": "packages/react/components/select/package.json",
-          "hash": "7969846626549654892",
+          "file": "packages/react/components/toast/package.json",
+          "hash": "5842196916810700592",
           "deps": [
             "@design/themes",
             "npm:react",
             "@design/esbuild-config",
-            "@design/react-hooks-input",
-            "@design/react-hooks-select",
             "npm:@types/react",
             "npm:@types/react-dom",
             "npm:@vanilla-extract/css",
@@ -611,24 +603,109 @@
           ]
         },
         {
-          "file": "packages/react/components/select/src/Select.tsx",
-          "hash": "9666048680658306806"
+          "file": "packages/react/components/toast/src/Toast.tsx",
+          "hash": "8792377838859614619"
         },
         {
-          "file": "packages/react/components/select/src/index.ts",
-          "hash": "9141684243305184125"
+          "file": "packages/react/components/toast/src/ToastContainer.tsx",
+          "hash": "7002435235804459319"
         },
         {
-          "file": "packages/react/components/select/src/style.css.ts",
-          "hash": "5848305323771943122"
+          "file": "packages/react/components/toast/src/ToastContext.ts",
+          "hash": "2944042911600349850"
         },
         {
-          "file": "packages/react/components/select/src/types.ts",
-          "hash": "12329603358765756774"
+          "file": "packages/react/components/toast/src/ToastProvider.tsx",
+          "hash": "1563059851088122764"
         },
         {
-          "file": "packages/react/components/select/tsconfig.json",
+          "file": "packages/react/components/toast/src/index.ts",
+          "hash": "7250574523632467111"
+        },
+        {
+          "file": "packages/react/components/toast/src/style.css.ts",
+          "hash": "15453810563803982080"
+        },
+        {
+          "file": "packages/react/components/toast/src/types.ts",
+          "hash": "13481647225971472081"
+        },
+        {
+          "file": "packages/react/components/toast/tsconfig.json",
           "hash": "10344179325425879767"
+        }
+      ],
+      "@design/docs": [
+        {
+          "file": "services/docs/README.md",
+          "hash": "9697874183936857080"
+        },
+        {
+          "file": "services/docs/next-env.d.ts",
+          "hash": "5909181270615354023"
+        },
+        {
+          "file": "services/docs/next.config.js",
+          "hash": "7129438187918259142"
+        },
+        {
+          "file": "services/docs/package.json",
+          "hash": "14782971256684372335",
+          "deps": [
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:typescript",
+            "npm:next",
+            "npm:nextra",
+            "npm:nextra-theme-docs",
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "services/docs/pages/_meta.json",
+          "hash": "13824144389735264367"
+        },
+        {
+          "file": "services/docs/pages/hooks/_meta.json",
+          "hash": "6178671861453637000"
+        },
+        {
+          "file": "services/docs/pages/hooks/index.mdx",
+          "hash": "8681997038702465551"
+        },
+        {
+          "file": "services/docs/pages/index.mdx",
+          "hash": "3675198234481497617"
+        },
+        {
+          "file": "services/docs/pages/themes/Installation.mdx",
+          "hash": "668476954629890204"
+        },
+        {
+          "file": "services/docs/theme.config.tsx",
+          "hash": "448656762741794605"
+        },
+        {
+          "file": "services/docs/tsconfig.json",
+          "hash": "1025468486427629623"
+        }
+      ],
+      "@design/esbuild-config": [
+        {
+          "file": "packages/esbuild-config/README.md",
+          "hash": "6886952344311067916"
+        },
+        {
+          "file": "packages/esbuild-config/index.js",
+          "hash": "219371835848018192"
+        },
+        {
+          "file": "packages/esbuild-config/package.json",
+          "hash": "6203595947843704464",
+          "deps": [
+            "npm:esbuild"
+          ]
         }
       ],
       "@design/react-components-button": [
@@ -679,59 +756,38 @@
           "hash": "10344179325425879767"
         }
       ],
-      "@design/react-components-input": [
+      "@design/react-hooks-select": [
         {
-          "file": "packages/react/components/input/build.js",
-          "hash": "14847324200671330000"
+          "file": "packages/react/hooks/select/build.js",
+          "hash": "11313241788351511933"
         },
         {
-          "file": "packages/react/components/input/package.json",
-          "hash": "15812345649605719577",
+          "file": "packages/react/hooks/select/package.json",
+          "hash": "4230504216859349397",
           "deps": [
-            "@design/themes",
             "npm:react",
             "@design/esbuild-config",
-            "@design/react-hooks-input",
             "npm:@types/react",
             "npm:@types/react-dom",
-            "npm:@vanilla-extract/css",
-            "npm:@vanilla-extract/dynamic",
-            "npm:@vanilla-extract/esbuild-plugin",
-            "npm:@vanilla-extract/recipes",
-            "npm:@vanilla-extract/sprinkles",
-            "npm:autoprefixer",
-            "npm:postcss",
             "npm:react-dom",
             "npm:typescript",
             "npm:clsx"
           ]
         },
         {
-          "file": "packages/react/components/input/src/Input.tsx",
-          "hash": "7607789197271007312"
+          "file": "packages/react/hooks/select/src/index.ts",
+          "hash": "5223736269965586498"
         },
         {
-          "file": "packages/react/components/input/src/InputGroup.tsx",
-          "hash": "16067699914029800220"
+          "file": "packages/react/hooks/select/src/types.ts",
+          "hash": "3698533023306847201"
         },
         {
-          "file": "packages/react/components/input/src/InputLeftAddon.tsx",
-          "hash": "10446725777033765429"
+          "file": "packages/react/hooks/select/src/useSelect.tsx",
+          "hash": "10272838170998038664"
         },
         {
-          "file": "packages/react/components/input/src/index.ts",
-          "hash": "7206012316751655975"
-        },
-        {
-          "file": "packages/react/components/input/src/style.css.ts",
-          "hash": "3865540409912588610"
-        },
-        {
-          "file": "packages/react/components/input/src/types.ts",
-          "hash": "9489455935155138525"
-        },
-        {
-          "file": "packages/react/components/input/tsconfig.json",
+          "file": "packages/react/hooks/select/tsconfig.json",
           "hash": "10344179325425879767"
         }
       ]
@@ -743,7 +799,7 @@
       },
       {
         "file": ".gitignore",
-        "hash": "2615622172927270952"
+        "hash": "8374326514946364482"
       },
       {
         "file": ".prettierrc",
@@ -767,7 +823,7 @@
       },
       {
         "file": "package.json",
-        "hash": "3550945107969442348"
+        "hash": "13733991144493393392"
       },
       {
         "file": "tsconfig.base.json",
@@ -779,7 +835,7 @@
       },
       {
         "file": "yarn.lock",
-        "hash": "17339115082283934038"
+        "hash": "5594052321363701309"
       }
     ]
   }

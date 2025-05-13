@@ -1,40 +1,18 @@
 {
   "run": {
-    "command": "nx build @design/react-components-layout",
-    "startTime": "2025-05-09T00:05:59.711Z",
-    "endTime": "2025-05-09T00:06:08.302Z",
+    "command": "nx affected -t test --parallel=3",
+    "startTime": "2025-05-13T08:36:08.698Z",
+    "endTime": "2025-05-13T08:36:10.237Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "@design/esbuild-config:build",
-      "target": "build",
-      "projectName": "@design/esbuild-config",
-      "hash": "16537807986994287985",
-      "startTime": "2025-05-09T00:05:59.747Z",
-      "endTime": "2025-05-09T00:06:00.114Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "@design/themes:build",
-      "target": "build",
-      "projectName": "@design/themes",
-      "hash": "2407905651124596340",
-      "startTime": "2025-05-09T00:06:00.115Z",
-      "endTime": "2025-05-09T00:06:03.727Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "@design/react-components-layout:build",
-      "target": "build",
-      "projectName": "@design/react-components-layout",
-      "hash": "539814821829541449",
-      "startTime": "2025-05-09T00:06:03.730Z",
-      "endTime": "2025-05-09T00:06:08.300Z",
+      "taskId": "@design/storybook:test",
+      "target": "test",
+      "projectName": "@design/storybook",
+      "hash": "18169411303277190838",
+      "startTime": "2025-05-13T08:36:08.731Z",
+      "endTime": "2025-05-13T08:36:10.233Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
