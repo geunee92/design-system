@@ -1,13 +1,25 @@
+import { JsonEditor } from "@/src/components/Editor/Json";
 import { DesktopFirstLayout } from "@/src/components/layout/DesktopFirstLayout";
 import { DesktopFirstBody } from "@/src/components/layout/DesktopFirstLayout/Body";
 import { DesktopFirstNav } from "@/src/components/layout/DesktopFirstLayout/Nav";
 import { Button } from "@design/react-components-button";
+import { formatObjectToJson } from "@/src/utils/jsonEditor";
+import { ViewSliceSchemaSnippet } from "@/src/utils/jsonEditor/ViewSliceSchemaSnippet";
+import { useState } from "react";
 
 const EditorNewPage: React.FC = () => {
+  const [schema, setSchema] = useState(
+    formatObjectToJson(ViewSliceSchemaSnippet.init),
+  );
+
+  const handleReset = () => {
+    setSchema(formatObjectToJson(ViewSliceSchemaSnippet.init));
+  };
+
   return (
     <DesktopFirstLayout>
       <DesktopFirstNav gap={8}>
-        <Button variant="outline" size="md" color="red">
+        <Button variant="outline" size="md" color="red" onClick={handleReset}>
           초기화
         </Button>
 
@@ -20,7 +32,12 @@ const EditorNewPage: React.FC = () => {
         </Button>
       </DesktopFirstNav>
 
-      <DesktopFirstBody>/editor/new</DesktopFirstBody>
+      <DesktopFirstBody>
+        <JsonEditor
+          value={schema}
+          onChange={(value) => setSchema(value || "")}
+        />
+      </DesktopFirstBody>
     </DesktopFirstLayout>
   );
 };
