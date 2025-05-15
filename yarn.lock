@@ -407,6 +407,7 @@ __metadata:
     "@design/react-components-accordion": "workspace:^"
     "@design/react-components-button": "workspace:^"
     "@design/react-components-layout": "workspace:^"
+    "@design/react-components-toast": "workspace:^"
     "@design/themes": "workspace:^"
     "@monaco-editor/react": "npm:^4.7.0"
     "@types/node": "npm:^22.15.17"
@@ -554,7 +555,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@design/react-components-toast@workspace:packages/react/components/toast":
+"@design/react-components-toast@workspace:^, @design/react-components-toast@workspace:packages/react/components/toast":
   version: 0.0.0-use.local
   resolution: "@design/react-components-toast@workspace:packages/react/components/toast"
   dependencies:
