@@ -2,24 +2,13 @@ import { Box } from "@design/react-components-layout";
 
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
-import { vars } from "@design/themes";
+
 import { convertSpacingRemToPx } from "@/src/utils/size";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { SliceSchemaProps } from "@/src/utils/validation/schema/types";
+import { ImageSliderSliceSchema } from "@/src/utils/validation/schema/slices";
 
-export type Image = {
-  imageUrl: string;
-  alt: string;
-};
-
-type Props = {
-  images: Image[];
-  sliceStyle?: {
-    backgroundColor?: string;
-    imageItemWidth?: number;
-    spaceBetween?: number;
-    paddingX?: keyof typeof vars.box.spacing;
-  };
-};
+type Props = SliceSchemaProps<typeof ImageSliderSliceSchema>;
 
 export const ImageSliderSlice: React.FC<Props> = ({
   images,
