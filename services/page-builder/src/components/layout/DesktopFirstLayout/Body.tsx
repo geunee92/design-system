@@ -1,6 +1,6 @@
-import { Box, BoxProps } from "@design/react-components-layout";
+import { Flex, FlexProps } from "@design/react-components-layout";
 
-type Props = BoxProps;
+type Props = FlexProps;
 
 export const DesktopFirstBody = (props: Props) => {
   const { children, padding = 2, className, ...rest } = props;
@@ -11,8 +11,8 @@ export const DesktopFirstBody = (props: Props) => {
   ].join(" ");
 
   return (
-    <Box {...rest} padding={padding} className={currentClassName}>
+    <Flex {...rest} padding={padding} className={currentClassName}>
       {children}
-    </Box>
+    </Flex>
   );
 };

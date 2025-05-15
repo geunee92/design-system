@@ -10,6 +10,8 @@ import ShortUniqueId from "short-unique-id";
 import { previewStorage } from "@/src/utils/storage";
 import { useToast } from "@design/react-components-toast";
 import { useViewSchemaValidation } from "@/src/hooks/useViewSchemaValidation";
+import { DesktopFirstSideNav } from "@/src/components/layout/DesktopFirstLayout/SideNav";
+import { JsonPresetList } from "@/src/components/EditorNewPage/JsonPresetList";
 
 const EditorNewPage: React.FC = () => {
   const { randomUUID } = new ShortUniqueId({ length: 10 });
@@ -70,6 +72,14 @@ const EditorNewPage: React.FC = () => {
       </DesktopFirstNav>
 
       <DesktopFirstBody>
+        <DesktopFirstSideNav>
+          <JsonPresetList
+            validateViewSchema={validateViewSchema}
+            schema={schema}
+            setSchema={setSchema}
+          />
+        </DesktopFirstSideNav>
+
         <JsonEditor
           value={schema}
           onChange={(value) => setSchema(value || "")}
