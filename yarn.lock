@@ -405,11 +405,12 @@ __metadata:
   resolution: "@design/page-builder@workspace:services/page-builder"
   dependencies:
     "@design/react-components-accordion": "workspace:^"
+    "@design/react-components-button": "workspace:^"
     "@design/react-components-layout": "workspace:^"
     "@design/themes": "workspace:^"
     "@types/node": "npm:^22.15.17"
-    "@types/react": "npm:^19.1.4"
-    "@types/react-dom": "npm:^19.1.5"
+    "@types/react": "npm:^18.2.21"
+    "@types/react-dom": "npm:^18.2.7"
     autoprefixer: "npm:^10"
     eslint: "npm:^9.26.0"
     next: "npm:15.3.2"
@@ -448,7 +449,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@design/react-components-button@workspace:packages/react/components/button":
+"@design/react-components-button@workspace:^, @design/react-components-button@workspace:packages/react/components/button":
   version: 0.0.0-use.local
   resolution: "@design/react-components-button@workspace:packages/react/components/button"
   dependencies:
@@ -3134,15 +3135,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^19.1.5":
-  version: 19.1.5
-  resolution: "@types/react-dom@npm:19.1.5"
-  peerDependencies:
-    "@types/react": ^19.0.0
-  checksum: 10c0/2a29e77cf6bb6e9f57bcfa54509c216cad2e16e244f0bd56369966ec88c072b9c91f6011d14f9e18fbfe2b801b18b86f616de75e5c8aef0be73c1f74abb33b49
-  languageName: node
-  linkType: hard
-
 "@types/react@npm:18.2.23":
   version: 18.2.23
   resolution: "@types/react@npm:18.2.23"
@@ -3170,15 +3162,6 @@ __metadata:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
   checksum: 10c0/b33424c62f01ab2404c60abef995e05aa1a696a636bdd77a34ef6c942d171c673b1e451d9dba7f9a169a83c9eef0ddfaf1ba08f6cef542df9404290199a73967
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:^19.1.4":
-  version: 19.1.4
-  resolution: "@types/react@npm:19.1.4"
-  dependencies:
-    csstype: "npm:^3.0.2"
-  checksum: 10c0/501350d4f9cef13c5dd1b1496fa70ebaff52f6fa359b623b51c9d817e5bc4333fa3c8b7a6a4cbc88c643385052d66a243c3ceccfd6926062f917a2dd0535f6b3
   languageName: node
   linkType: hard
 
