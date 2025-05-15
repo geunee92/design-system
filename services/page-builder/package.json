@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@design/react-components-accordion": "workspace:^",
     "@design/react-components-layout": "workspace:^",
     "@design/themes": "workspace:^",
     "next": "15.3.2",

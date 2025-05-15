@@ -404,6 +404,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@design/page-builder@workspace:services/page-builder"
   dependencies:
+    "@design/react-components-accordion": "workspace:^"
     "@design/react-components-layout": "workspace:^"
     "@design/themes": "workspace:^"
     "@types/node": "npm:^22.15.17"
@@ -421,7 +422,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@design/react-components-accordion@workspace:packages/react/components/accordion":
+"@design/react-components-accordion@workspace:^, @design/react-components-accordion@workspace:packages/react/components/accordion":
   version: 0.0.0-use.local
   resolution: "@design/react-components-accordion@workspace:packages/react/components/accordion"
   dependencies:
