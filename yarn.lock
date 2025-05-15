@@ -414,6 +414,7 @@ __metadata:
     "@types/react": "npm:^18.2.21"
     "@types/react-dom": "npm:^18.2.7"
     autoprefixer: "npm:^10"
+    axios: "npm:^1.9.0"
     eslint: "npm:^9.26.0"
     next: "npm:15.3.2"
     postcss: "npm:^8"
@@ -4153,7 +4154,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.8.3":
+"axios@npm:^1.8.3, axios@npm:^1.9.0":
   version: 1.9.0
   resolution: "axios@npm:1.9.0"
   dependencies:
