@@ -6,14 +6,25 @@ import { Button } from "@design/react-components-button";
 import { formatObjectToJson } from "@/src/utils/jsonEditor";
 import { ViewSliceSchemaSnippet } from "@/src/utils/jsonEditor/ViewSliceSchemaSnippet";
 import { useState } from "react";
+import ShortUniqueId from "short-unique-id";
+import { previewStorage } from "@/src/utils/storage";
 
 const EditorNewPage: React.FC = () => {
+  const { randomUUID } = new ShortUniqueId({ length: 10 });
+  const viewId = randomUUID();
+
   const [schema, setSchema] = useState(
     formatObjectToJson(ViewSliceSchemaSnippet.init),
   );
 
   const handleReset = () => {
     setSchema(formatObjectToJson(ViewSliceSchemaSnippet.init));
+  };
+
+  const handlePreview = () => {
+    previewStorage.set(viewId, schema);
+
+    window.open(`/preview/${viewId}`, "_blank");
   };
 
   return (
@@ -23,7 +34,12 @@ const EditorNewPage: React.FC = () => {
           초기화
         </Button>
 
-        <Button variant="outline" size="md" color="gray">
+        <Button
+          variant="outline"
+          size="md"
+          color="gray"
+          onClick={handlePreview}
+        >
           미리보기
         </Button>
 
