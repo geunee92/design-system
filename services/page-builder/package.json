@@ -12,6 +12,7 @@
   "dependencies": {
     "@design/react-components-accordion": "workspace:^",
     "@design/react-components-button": "workspace:^",
+    "@design/react-components-input": "workspace:^",
     "@design/react-components-layout": "workspace:^",
     "@design/react-components-toast": "workspace:^",
     "@design/themes": "workspace:^",

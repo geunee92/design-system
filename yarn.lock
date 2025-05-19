@@ -406,6 +406,7 @@ __metadata:
   dependencies:
     "@design/react-components-accordion": "workspace:^"
     "@design/react-components-button": "workspace:^"
+    "@design/react-components-input": "workspace:^"
     "@design/react-components-layout": "workspace:^"
     "@design/react-components-toast": "workspace:^"
     "@design/themes": "workspace:^"
@@ -481,7 +482,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@design/react-components-input@workspace:packages/react/components/input":
+"@design/react-components-input@workspace:^, @design/react-components-input@workspace:packages/react/components/input":
   version: 0.0.0-use.local
   resolution: "@design/react-components-input@workspace:packages/react/components/input"
   dependencies:
