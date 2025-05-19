@@ -1,7 +1,7 @@
-import { JsonEditor } from "@/src/components/Editor/Json";
-import { DesktopFirstLayout } from "@/src/components/layout/DesktopFirstLayout";
-import { DesktopFirstBody } from "@/src/components/layout/DesktopFirstLayout/Body";
-import { DesktopFirstNav } from "@/src/components/layout/DesktopFirstLayout/Nav";
+import { JsonEditor } from "@/src/components/Common/Editor/Json";
+import { DesktopFirstLayout } from "@/src/components/Common/Layouts/DesktopFirstLayout";
+import { DesktopFirstBody } from "@/src/components/Common/Layouts/DesktopFirstLayout/Body";
+import { DesktopFirstNav } from "@/src/components/Common/Layouts/DesktopFirstLayout/Nav";
 import { Button } from "@design/react-components-button";
 import { formatObjectToJson } from "@/src/utils/jsonEditor";
 import { ViewSliceSchemaSnippet } from "@/src/utils/jsonEditor/ViewSliceSchemaSnippet";
@@ -10,8 +10,8 @@ import ShortUniqueId from "short-unique-id";
 import { previewStorage } from "@/src/utils/storage";
 import { useToast } from "@design/react-components-toast";
 import { useViewSchemaValidation } from "@/src/hooks/useViewSchemaValidation";
-import { DesktopFirstSideNav } from "@/src/components/layout/DesktopFirstLayout/SideNav";
-import { JsonPresetList } from "@/src/components/EditorNewPage/JsonPresetList";
+import { DesktopFirstSideNav } from "@/src/components/Common/Layouts/DesktopFirstLayout/SideNav";
+import { JsonPresetList } from "@/src/components/Features/EditorNewPage/JsonPresetList";
 import { putViewDetail } from "@/src/apis/worker/putViewDetail";
 
 const EditorNewPage: React.FC = () => {

@@ -1,10 +1,10 @@
 import { useMemo } from "react";
-import { MetadataSlice } from "../components/view/slices/Metadata";
-import { TextSlice } from "../components/view/slices/Text";
-import { ImageSlice } from "../components/view/slices/Image";
-import { SpacingSlice } from "../components/view/slices/Spacing";
-import { ImageSliderSectionSlice } from "../components/view/slices/ImageSliderSection";
-import { AccordionSlice } from "../components/view/slices/Accordion";
+import { MetadataSlice } from "../components/Features/Views/slices/Metadata";
+import { TextSlice } from "../components/Features/Views/slices/Text";
+import { ImageSlice } from "../components/Features/Views/slices/Image";
+import { SpacingSlice } from "../components/Features/Views/slices/Spacing";
+import { ImageSliderSectionSlice } from "../components/Features/Views/slices/ImageSliderSection";
+import { AccordionSlice } from "../components/Features/Views/slices/Accordion";
 import { ViewSchemaProps } from "../utils/validation/schema/types";
 
 export const useViewSchemaSlices = (viewSchema: ViewSchemaProps) => {
