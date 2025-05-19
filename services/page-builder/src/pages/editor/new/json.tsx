@@ -14,7 +14,7 @@ import { DesktopFirstSideNav } from "@/src/components/Common/Layouts/DesktopFirs
 import { JsonPresetList } from "@/src/components/Features/EditorNewPage/JsonPresetList";
 import { putViewDetail } from "@/src/apis/worker/putViewDetail";
 
-const EditorNewPage: React.FC = () => {
+const EditorNewJsonPage: React.FC = () => {
   const { randomUUID } = new ShortUniqueId({ length: 10 });
 
   const [viewId] = useState(randomUUID());
@@ -132,4 +132,4 @@ const EditorNewPage: React.FC = () => {
   );
 };
 
-export default EditorNewPage;
+export default EditorNewJsonPage;
