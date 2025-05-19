@@ -5,6 +5,7 @@ import { ViewSchemaFormSliceSpacingFields } from "./SpacingFields";
 import { useViewSchemaFormSliceFieldArray } from "@/src/hooks/useViewSchemaFormSliceFieldArray";
 import { ViewSchemaFormSliceTextFields } from "./TextFields";
 import ShortUniqueId from "short-unique-id";
+import { ViewSchemaFormSliceImageFields } from "./ImageFields";
 
 export const ViewSchemaFormSliceFields = () => {
   const { fields } = useViewSchemaFormSliceFieldArray();
@@ -34,6 +35,15 @@ export const ViewSchemaFormSliceFields = () => {
           case "TextSlice": {
             return (
               <ViewSchemaFormSliceTextFields
+                key={field.id}
+                fieldIndex={index}
+              />
+            );
+          }
+
+          case "ImageSlice": {
+            return (
+              <ViewSchemaFormSliceImageFields
                 key={field.id}
                 fieldIndex={index}
               />

@@ -32,7 +32,7 @@ export const ViewSchemaFormSliceTextFields = ({ fieldIndex }: Props) => {
     <FormFieldSection
       title={
         <>
-          ${fieldIndex}. Text{" "}
+          {fieldIndex}. Text{" "}
           <Button
             size="xs"
             variant="outline"
