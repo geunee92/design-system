@@ -14,6 +14,7 @@
     "@design/react-components-button": "workspace:^",
     "@design/react-components-input": "workspace:^",
     "@design/react-components-layout": "workspace:^",
+    "@design/react-components-select": "workspace:^",
     "@design/react-components-toast": "workspace:^",
     "@design/themes": "workspace:^",
     "@hookform/resolvers": "^3.3.2",
