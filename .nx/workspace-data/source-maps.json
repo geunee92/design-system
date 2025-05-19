@@ -2845,6 +2845,188 @@
       "nx/target-defaults"
     ]
   },
+  "services/page-builder": {
+    "root": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "projectType": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.executor": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.options": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.options.script": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata.scriptContent": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata.runCommand": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.executor": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options.script": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.scriptContent": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.runCommand": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.executor": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options.script": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.scriptContent": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.runCommand": [
+      "services/page-builder/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
   "services/storybook": {
     "root": [
       "services/storybook/package.json",
@@ -3129,6 +3311,14 @@
     "targets.nx-release-publish.options": [
       "services/storybook/package.json",
       "nx/core/package-json"
+    ],
+    "targets.test.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
     ],
     "targets.build.dependsOn": [
       "nx.json",

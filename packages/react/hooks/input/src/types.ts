@@ -5,8 +5,6 @@ export type UseInputProps = {
   isReadOnly?: boolean;
   isRequired?: boolean;
   isInvalid?: boolean;
-  value?: string;
-  onChange?: string;
   // unControlled 방식도 사용하기 위해 범용적인 타입을 같이 사용
 } & Omit<ComponentPropsWithoutRef<"input">, "disabled" | "readOnly">;
 
