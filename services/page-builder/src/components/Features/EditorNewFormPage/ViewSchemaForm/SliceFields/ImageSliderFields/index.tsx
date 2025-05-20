@@ -8,6 +8,7 @@ import { Divider } from "@design/react-components-layout";
 import { vars } from "@design/themes";
 import { useEffect } from "react";
 import { ImagesFields } from "./ImagesFields";
+import { SliceFieldTitleNavBar } from "../Common/SliceFieldTitleNavBar";
 
 type Props = {
   fieldIndex: number;
@@ -15,32 +16,18 @@ type Props = {
 
 export const ViewSchemaFormSliceImageSliderFields = ({ fieldIndex }: Props) => {
   const { register, setValue } = useViewSchemaFormContext();
-  const { remove } = useViewSchemaFormSliceFieldArray();
 
   useEffect(() => {
     setValue(`slices.${fieldIndex}.sliceName`, "ImageSliderSlice");
   }, []);
 
-  const handleRemove = (event: React.MouseEvent<HTMLButtonElement>) => {
-    event.stopPropagation();
-
-    remove(fieldIndex);
-  };
-
   return (
     <FormFieldSection
       title={
-        <>
-          {fieldIndex}. ImageSlider{" "}
-          <Button
-            size="xs"
-            variant="outline"
-            color="red"
-            onClick={handleRemove}
-          >
-            삭제
-          </Button>
-        </>
+        <SliceFieldTitleNavBar
+          title={`${fieldIndex}. ImageSlider`}
+          fieldIndex={fieldIndex}
+        />
       }
     >
       <ImagesFields fieldIndex={fieldIndex} />

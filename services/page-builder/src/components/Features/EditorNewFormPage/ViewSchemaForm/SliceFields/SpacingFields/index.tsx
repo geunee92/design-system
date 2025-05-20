@@ -5,6 +5,7 @@ import { useViewSchemaFormSliceFieldArray } from "@/src/hooks/useViewSchemaFormS
 import { Button } from "@design/react-components-button";
 import { vars } from "@design/themes";
 import { useEffect } from "react";
+import { SliceFieldTitleNavBar } from "../Common/SliceFieldTitleNavBar";
 
 type Props = {
   fieldIndex: number;
@@ -13,32 +14,17 @@ type Props = {
 export const ViewSchemaFormSliceSpacingFields = ({ fieldIndex }: Props) => {
   const { register, setValue } = useViewSchemaFormContext();
 
-  const { remove } = useViewSchemaFormSliceFieldArray();
-
   useEffect(() => {
     setValue(`slices.${fieldIndex}.sliceName`, "SpacingSlice");
   }, []);
 
-  const handleRemove = (event: React.MouseEvent<HTMLButtonElement>) => {
-    event.stopPropagation();
-
-    remove(fieldIndex);
-  };
-
   return (
     <FormFieldSection
       title={
-        <>
-          {fieldIndex}. Spacing{" "}
-          <Button
-            size="xs"
-            variant="outline"
-            color="red"
-            onClick={handleRemove}
-          >
-            삭제
-          </Button>
-        </>
+        <SliceFieldTitleNavBar
+          title={`${fieldIndex}. Spacing`}
+          fieldIndex={fieldIndex}
+        />
       }
     >
       <InputField
