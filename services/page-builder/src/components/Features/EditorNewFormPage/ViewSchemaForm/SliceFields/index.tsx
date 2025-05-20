@@ -7,6 +7,7 @@ import { ViewSchemaFormSliceTextFields } from "./TextFields";
 import ShortUniqueId from "short-unique-id";
 import { ViewSchemaFormSliceImageFields } from "./ImageFields";
 import { ViewSchemaFormSliceImageSliderFields } from "./ImageSliderFields";
+import { ViewSchemaFormSliceAccordionFields } from "./AccordionSlice";
 
 export const ViewSchemaFormSliceFields = () => {
   const { fields } = useViewSchemaFormSliceFieldArray();
@@ -54,6 +55,11 @@ export const ViewSchemaFormSliceFields = () => {
           case "ImageSliderSlice": {
             return <ViewSchemaFormSliceImageSliderFields fieldIndex={index} />;
           }
+
+          case "AccordionSlice": {
+            return <ViewSchemaFormSliceAccordionFields fieldIndex={index} />;
+          }
+
           default:
             <></>;
         }
