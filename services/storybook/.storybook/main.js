@@ -17,8 +17,6 @@ const config = {
   addons: [
     getAbsolutePath("@storybook/addon-essentials"),
     getAbsolutePath("@storybook/addon-onboarding"),
-    getAbsolutePath("@chromatic-com/storybook"),
-    getAbsolutePath("@storybook/experimental-addon-test"),
     getAbsolutePath("storybook-addon-root-attributes"),
     getAbsolutePath("@storybook/addon-a11y"),
     getAbsolutePath("storybook-addon-pseudo-states"),

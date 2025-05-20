@@ -2117,6 +2117,7 @@ __metadata:
     react-dom: "npm:^18.2.0"
     typescript: "npm:^5.2.2"
   peerDependencies:
+    "@design/react-hooks-button": "workspace:^"
     "@design/themes": "workspace:^"
     react: "*"
   languageName: unknown
