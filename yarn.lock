@@ -1362,6 +1362,25 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@design/youtube@workspace:services/youtube":
+  version: 0.0.0-use.local
+  resolution: "@design/youtube@workspace:services/youtube"
+  dependencies:
+    "@design/themes": "workspace:^"
+    "@types/node": "npm:^20.8.3"
+    "@types/react": "npm:^18.2.25"
+    "@types/react-dom": "npm:^18.2.11"
+    "@vanilla-extract/css": "npm:^1.13.0"
+    "@vanilla-extract/dynamic": "npm:^2.0.3"
+    "@vanilla-extract/next-plugin": "npm:^2.3.2"
+    "@vanilla-extract/recipes": "npm:^0.5.0"
+    next: "npm:13.5.4"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    typescript: "npm:^5.2.2"
+  languageName: unknown
+  linkType: soft
+
 "@emnapi/core@npm:^1.1.0":
   version: 1.4.3
   resolution: "@emnapi/core@npm:1.4.3"
@@ -4199,6 +4218,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^20.8.3":
+  version: 20.17.48
+  resolution: "@types/node@npm:20.17.48"
+  dependencies:
+    undici-types: "npm:~6.19.2"
+  checksum: 10c0/fc7031f9cdee25b3ff9a0e7cbb97d58b9e19107ce28ffa8c22f1bbb2d84e8328e08343d261784160c9b7f01174c39fe1c31207451815824745c500f2934a86d3
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:^22.15.17":
   version: 22.15.19
   resolution: "@types/node@npm:22.15.19"
@@ -4222,7 +4250,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^18.2.7":
+"@types/react-dom@npm:^18.2.11, @types/react-dom@npm:^18.2.7":
   version: 18.3.7
   resolution: "@types/react-dom@npm:18.3.7"
   peerDependencies:
@@ -4251,7 +4279,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.2.21":
+"@types/react@npm:^18.2.21, @types/react@npm:^18.2.25":
   version: 18.3.21
   resolution: "@types/react@npm:18.3.21"
   dependencies:
@@ -4525,6 +4553,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vanilla-extract/css@npm:^1.17.2":
+  version: 1.17.2
+  resolution: "@vanilla-extract/css@npm:1.17.2"
+  dependencies:
+    "@emotion/hash": "npm:^0.9.0"
+    "@vanilla-extract/private": "npm:^1.0.7"
+    css-what: "npm:^6.1.0"
+    cssesc: "npm:^3.0.0"
+    csstype: "npm:^3.0.7"
+    dedent: "npm:^1.5.3"
+    deep-object-diff: "npm:^1.1.9"
+    deepmerge: "npm:^4.2.2"
+    lru-cache: "npm:^10.4.3"
+    media-query-parser: "npm:^2.0.2"
+    modern-ahocorasick: "npm:^1.0.0"
+    picocolors: "npm:^1.0.0"
+  checksum: 10c0/b4e4b706b05c7274ef50e7eef5fa978b5f6d246e5b0befbec37991485f50b24417a66c61b99c9d93cf3626a12b0a594ac87c2f2afda9f241ac67c717afa93c75
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/dynamic@npm:^2.0.3":
+  version: 2.1.3
+  resolution: "@vanilla-extract/dynamic@npm:2.1.3"
+  dependencies:
+    "@vanilla-extract/private": "npm:^1.0.7"
+  checksum: 10c0/3d3ff7f3ccf1002860283b7a3a7be0fe4afde4160963c87c706c4bc274f6cca3f9be79e6e25765e860a378bc1057b639faf376cb7f4ed0720a8b2ff6de3e67d6
+  languageName: node
+  linkType: hard
+
 "@vanilla-extract/dynamic@npm:^2.1.2":
   version: 2.1.2
   resolution: "@vanilla-extract/dynamic@npm:2.1.2"
@@ -4566,6 +4623,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vanilla-extract/integration@npm:^8.0.2":
+  version: 8.0.2
+  resolution: "@vanilla-extract/integration@npm:8.0.2"
+  dependencies:
+    "@babel/core": "npm:^7.23.9"
+    "@babel/plugin-syntax-typescript": "npm:^7.23.3"
+    "@vanilla-extract/babel-plugin-debug-ids": "npm:^1.2.0"
+    "@vanilla-extract/css": "npm:^1.17.2"
+    dedent: "npm:^1.5.3"
+    esbuild: "npm:esbuild@>=0.17.6 <0.26.0"
+    eval: "npm:0.1.8"
+    find-up: "npm:^5.0.0"
+    javascript-stringify: "npm:^2.0.1"
+    mlly: "npm:^1.4.2"
+  checksum: 10c0/c0c5a7a4c75711eefa8193bf21a2e50f469a286a4b0d06bbe21c0561b0f1588cf503202604d78d582f8489a46f16d7ee9fabfc3907ff8bae5033f83f0f83e09e
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/next-plugin@npm:^2.3.2":
+  version: 2.4.11
+  resolution: "@vanilla-extract/next-plugin@npm:2.4.11"
+  dependencies:
+    "@vanilla-extract/webpack-plugin": "npm:^2.3.19"
+  peerDependencies:
+    next: ">=12.1.7"
+  checksum: 10c0/d87d17e10bdd014bd021376f9e829229468d1f44f75a48ab37fff615e6b98b9e9d4468af9474656787dadb8d6d1e4d18e94463453ca1fb359a7a940af8b82f89
+  languageName: node
+  linkType: hard
+
 "@vanilla-extract/private@npm:^1.0.6":
   version: 1.0.6
   resolution: "@vanilla-extract/private@npm:1.0.6"
@@ -4573,7 +4659,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/recipes@npm:^0.5.5":
+"@vanilla-extract/private@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "@vanilla-extract/private@npm:1.0.7"
+  checksum: 10c0/2f17527819603f6f1ad7912a92226bd59c0e74d0fe896a7825e24296c9450413a043d0ca1ce8f46dca384b7a87e8a1160163d5f98f49f59dd38a71ea3fceefc0
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/recipes@npm:^0.5.0, @vanilla-extract/recipes@npm:^0.5.5":
   version: 0.5.5
   resolution: "@vanilla-extract/recipes@npm:0.5.5"
   peerDependencies:
@@ -4588,6 +4681,20 @@ __metadata:
   peerDependencies:
     "@vanilla-extract/css": ^1.0.0
   checksum: 10c0/17e03af9d090aa175bdeae646ae4a5bf1da37b7e473caa4ab92efbbd7678e53137e10281a0669f50ab5bd985a59e621da2bfc3e0cc28bded32becd72b8cfaf13
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/webpack-plugin@npm:^2.3.19":
+  version: 2.3.19
+  resolution: "@vanilla-extract/webpack-plugin@npm:2.3.19"
+  dependencies:
+    "@vanilla-extract/integration": "npm:^8.0.2"
+    debug: "npm:^4.3.1"
+    loader-utils: "npm:^2.0.0"
+    picocolors: "npm:^1.0.0"
+  peerDependencies:
+    webpack: ^4.30.0 || ^5.20.2
+  checksum: 10c0/a7f73ef5d24c19456e1e26130d7b79bed66ef2e1f2fd2488f956fe8db59a8fc2eb56324ed81c781c9c0498724a0c0c2aa7771da5fb93ef88895e934b6cb7ee42
   languageName: node
   linkType: hard
 
@@ -5269,6 +5376,13 @@ __metadata:
   dependencies:
     open: "npm:^8.0.4"
   checksum: 10c0/911ef25d44da75aabfd2444ce7a4294a8000ebcac73068c04a60298b0f7c7506b60421aa4cd02ac82502fb42baaff7e4892234b51e6923eded44c5a11185f2f5
+  languageName: node
+  linkType: hard
+
+"big.js@npm:^5.2.2":
+  version: 5.2.2
+  resolution: "big.js@npm:5.2.2"
+  checksum: 10c0/230520f1ff920b2d2ce3e372d77a33faa4fa60d802fe01ca4ffbc321ee06023fe9a741ac02793ee778040a16b7e497f7d60c504d1c402b8fdab6f03bb785a25f
   languageName: node
   linkType: hard
 
@@ -6580,6 +6694,13 @@ __metadata:
   version: 9.2.2
   resolution: "emoji-regex@npm:9.2.2"
   checksum: 10c0/af014e759a72064cf66e6e694a7fc6b0ed3d8db680427b021a89727689671cefe9d04151b2cad51dbaf85d5ba790d061cd167f1cf32eb7b281f6368b3c181639
+  languageName: node
+  linkType: hard
+
+"emojis-list@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "emojis-list@npm:3.0.0"
+  checksum: 10c0/7dc4394b7b910444910ad64b812392159a21e1a7ecc637c775a440227dcb4f80eff7fe61f4453a7d7603fa23d23d30cc93fe9e4b5ed985b88d6441cd4a35117b
   languageName: node
   linkType: hard
 
@@ -9107,7 +9228,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json5@npm:^2.2.2, json5@npm:^2.2.3":
+"json5@npm:^2.1.2, json5@npm:^2.2.2, json5@npm:^2.2.3":
   version: 2.2.3
   resolution: "json5@npm:2.2.3"
   bin:
@@ -9264,6 +9385,17 @@ __metadata:
   version: 1.2.4
   resolution: "lines-and-columns@npm:1.2.4"
   checksum: 10c0/3da6ee62d4cd9f03f5dc90b4df2540fb85b352081bee77fe4bbcd12c9000ead7f35e0a38b8d09a9bb99b13223446dd8689ff3c4959807620726d788701a83d2d
+  languageName: node
+  linkType: hard
+
+"loader-utils@npm:^2.0.0":
+  version: 2.0.4
+  resolution: "loader-utils@npm:2.0.4"
+  dependencies:
+    big.js: "npm:^5.2.2"
+    emojis-list: "npm:^3.0.0"
+    json5: "npm:^2.1.2"
+  checksum: 10c0/d5654a77f9d339ec2a03d88221a5a695f337bf71eb8dea031b3223420bb818964ba8ed0069145c19b095f6c8b8fd386e602a3fc7ca987042bd8bb1dcc90d7100
   languageName: node
   linkType: hard
 
@@ -13264,6 +13396,13 @@ __metadata:
     has-symbols: "npm:^1.1.0"
     which-boxed-primitive: "npm:^1.1.1"
   checksum: 10c0/7dbd35ab02b0e05fe07136c72cb9355091242455473ec15057c11430129bab38b7b3624019b8778d02a881c13de44d63cd02d122ee782fb519e1de7775b5b982
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~6.19.2":
+  version: 6.19.8
+  resolution: "undici-types@npm:6.19.8"
+  checksum: 10c0/078afa5990fba110f6824823ace86073b4638f1d5112ee26e790155f481f2a868cc3e0615505b6f4282bdf74a3d8caad715fd809e870c2bb0704e3ea6082f344
   languageName: node
   linkType: hard
 
