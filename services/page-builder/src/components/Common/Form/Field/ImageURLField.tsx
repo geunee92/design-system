@@ -6,7 +6,7 @@ import {
 } from "../Layouts/FormFieldWrapper";
 import { ImageURLInput, ImageURLInputProps } from "../Input/ImageURL";
 
-type Props = ImageURLInputProps & FormFieldWrapperProps;
+type Props = ImageURLInputProps & Omit<FormFieldWrapperProps, "onChange">;
 
 export const ImageURLField = (props: Props) => {
   const { label, isRequired, ...inputRest } = props;
