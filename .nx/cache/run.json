@@ -1,8 +1,8 @@
 {
   "run": {
-    "command": "nx build @design/react-components-input",
-    "startTime": "2025-05-19T05:05:40.823Z",
-    "endTime": "2025-05-19T05:05:46.098Z",
+    "command": "nx run @design/storybook:test",
+    "startTime": "2025-05-20T12:48:46.769Z",
+    "endTime": "2025-05-20T12:48:51.709Z",
     "inner": false
   },
   "tasks": [
@@ -10,31 +10,20 @@
       "taskId": "@design/themes:build",
       "target": "build",
       "projectName": "@design/themes",
-      "hash": "11459645430497629940",
-      "startTime": "2025-05-19T05:05:40.857Z",
-      "endTime": "2025-05-19T05:05:43.250Z",
+      "hash": "9995444910861966723",
+      "startTime": "2025-05-20T12:48:46.887Z",
+      "endTime": "2025-05-20T12:48:49.661Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
     },
     {
-      "taskId": "@design/react-hooks-input:build",
-      "target": "build",
-      "projectName": "@design/react-hooks-input",
-      "hash": "627573246151604493",
-      "startTime": "2025-05-19T05:05:40.857Z",
-      "endTime": "2025-05-19T05:05:43.346Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "@design/react-components-input:build",
-      "target": "build",
-      "projectName": "@design/react-components-input",
-      "hash": "7025021906096622096",
-      "startTime": "2025-05-19T05:05:43.348Z",
-      "endTime": "2025-05-19T05:05:46.087Z",
+      "taskId": "@design/storybook:test",
+      "target": "test",
+      "projectName": "@design/storybook",
+      "hash": "2510371535712908949",
+      "startTime": "2025-05-20T12:48:49.665Z",
+      "endTime": "2025-05-20T12:48:51.708Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

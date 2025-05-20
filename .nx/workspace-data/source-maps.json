@@ -3328,5 +3328,187 @@
       "nx.json",
       "nx/target-defaults"
     ]
+  },
+  "services/youtube": {
+    "root": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "projectType": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.executor": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.options": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.options.script": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata.scriptContent": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata.runCommand": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.executor": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options.script": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.scriptContent": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.runCommand": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.executor": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options.script": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.scriptContent": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.runCommand": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
   }
 }

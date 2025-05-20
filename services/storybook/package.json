@@ -38,5 +38,12 @@
     "build": "npx chromatic --project-token=chpt_fcfc1daad4d6803",
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_fcfc1daad4d6803"
+  },
+  "dependencies": {
+    "@design/react-components-accordion": "workspace:^",
+    "@design/react-components-input": "workspace:^",
+    "@design/react-components-select": "workspace:^",
+    "@design/react-components-toast": "workspace:^",
+    "@design/react-hooks-button": "workspace:^"
   }
 }
