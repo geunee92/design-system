@@ -6,6 +6,7 @@ import { useViewSchemaFormSliceFieldArray } from "@/src/hooks/useViewSchemaFormS
 import { ViewSchemaFormSliceTextFields } from "./TextFields";
 import ShortUniqueId from "short-unique-id";
 import { ViewSchemaFormSliceImageFields } from "./ImageFields";
+import { ViewSchemaFormSliceImageSliderFields } from "./ImageSliderFields";
 
 export const ViewSchemaFormSliceFields = () => {
   const { fields } = useViewSchemaFormSliceFieldArray();
@@ -48,6 +49,10 @@ export const ViewSchemaFormSliceFields = () => {
                 fieldIndex={index}
               />
             );
+          }
+
+          case "ImageSliderSlice": {
+            return <ViewSchemaFormSliceImageSliderFields fieldIndex={index} />;
           }
           default:
             <></>;
