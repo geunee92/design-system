@@ -1374,6 +1374,8 @@ __metadata:
   resolution: "@design/youtube@workspace:services/youtube"
   dependencies:
     "@design/themes": "workspace:^"
+    "@tanstack/react-query": "npm:^5.76.1"
+    "@tanstack/react-query-next-experimental": "npm:^5.76.1"
     "@types/node": "npm:^20.8.3"
     "@types/react": "npm:^18.2.25"
     "@types/react-dom": "npm:^18.2.11"
@@ -3867,6 +3869,35 @@ __metadata:
   dependencies:
     tslib: "npm:^2.4.0"
   checksum: 10c0/b6fa49bcf6c00571d0eb7837b163f8609960d4d77538160585e27ed167361e9776bd6e5eb9646ffac2fb4d43c58df9ca50dab9d96ab097e6591bc82a75fd1164
+  languageName: node
+  linkType: hard
+
+"@tanstack/query-core@npm:5.76.0":
+  version: 5.76.0
+  resolution: "@tanstack/query-core@npm:5.76.0"
+  checksum: 10c0/970cc783838bf7e30acbad476c72e4bb3b302c15525152cfcf5ffef8b185537e780b608e3f77793cb355b49cc98a9de597d978d400df44dbd550cba78742d67c
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query-next-experimental@npm:^5.76.1":
+  version: 5.76.1
+  resolution: "@tanstack/react-query-next-experimental@npm:5.76.1"
+  peerDependencies:
+    "@tanstack/react-query": ^5.76.1
+    next: ^13 || ^14 || ^15
+    react: ^18 || ^19
+  checksum: 10c0/c46d73bf288e07007405bc6e0048647dc8a9521d4c914e24d97b1d43cfcf43550deba73855ebd36be8de5b3dbf4a900d8c7a2755de1dbfea221efcd494ed9987
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query@npm:^5.76.1":
+  version: 5.76.1
+  resolution: "@tanstack/react-query@npm:5.76.1"
+  dependencies:
+    "@tanstack/query-core": "npm:5.76.0"
+  peerDependencies:
+    react: ^18 || ^19
+  checksum: 10c0/35757f185ccd577e0763b18c2e29db621b40fb85419507d43a2a136fd47d8a4410f219fa9697142f7199577cc42c23dd117021cc8c072545eca133d5114148d9
   languageName: node
   linkType: hard
 
