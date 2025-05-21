@@ -1,7 +1,7 @@
 import {
   GetVideosPopularListRequestParams,
   GetVideosPopularListResponse,
-} from "@/src/features/main/api/getPopularVideoList";
+} from "@/src/features/main/api/getVideosPopularList";
 import { youtubeServerInstance } from "@/src/shared/api/youtube/server/instance";
 import { formatKoreanTextCompareDatesFromNow } from "@/src/shared/utils/format/date";
 import { formatNumberToKoreanText } from "@/src/shared/utils/format/number";
