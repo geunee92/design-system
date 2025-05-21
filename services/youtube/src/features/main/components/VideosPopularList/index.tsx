@@ -1,7 +1,8 @@
 "use client";
 
 import { useGetVideosPopularList } from "../../hooks/useGetVideosPopularList";
-import * as s from "./index.css";
+import * as s from "./style.css";
+import { VideosPopularListItem } from "./ListItem";
 
 export const VideosPopularList = () => {
   const { data } = useGetVideosPopularList({});
@@ -11,9 +12,7 @@ export const VideosPopularList = () => {
   return (
     <section className={s.wrapper}>
       {flatData.map((item) => (
-        <div key={item.videoId} className={s.item}>
-          <div className={s.itemWrapper} />
-        </div>
+        <VideosPopularListItem key={item.videoId} video={item} />
       ))}
     </section>
   );
