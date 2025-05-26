@@ -15,7 +15,7 @@ describe("YoutubeMainPage data fetching", () => {
 
   it("페이지 init 이후 데이터가 불러와지면 스켈레톤이 사라지고 리스트 항목이 잘 보여지는가", async () => {
     server.use(
-      http.get(getVideosPopularListUrl, () => {
+      http.get(getVideosPopularListUrl(), () => {
         return HttpResponse.json({
           ...GET_MOCK_VIDEOS_POPULAR_LIST.success,
           nextPageToken: undefined,
@@ -39,7 +39,7 @@ describe("YoutubeMainPage data fetching", () => {
 
   it("페이지 로드 이후 추가로 불러올 데이터가 있다면 VisibilityLoader가 잘 노출되는가?", async () => {
     server.use(
-      http.get(getVideosPopularListUrl, () => {
+      http.get(getVideosPopularListUrl(), () => {
         return HttpResponse.json({
           ...GET_MOCK_VIDEOS_POPULAR_LIST.success,
           nextPageToken: "nextPageToken",
