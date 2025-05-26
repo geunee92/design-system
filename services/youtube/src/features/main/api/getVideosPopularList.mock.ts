@@ -2,7 +2,7 @@ import { HttpHandler, HttpResponse, http } from "msw";
 import { getVideosPopularListUrl } from "./getVideosPopularList";
 
 export const getMockVideosPopularList: HttpHandler = http.get(
-  getVideosPopularListUrl,
+  getVideosPopularListUrl(),
   () => {
     return HttpResponse.json(GET_MOCK_VIDEOS_POPULAR_LIST.success);
   },

@@ -1,8 +1,8 @@
 import { HttpHandler, HttpResponse, http } from "msw";
-import { getSearchVideosListURL } from "./getSearchVideosList";
+import { getSearchVideosListUrl } from "./getSearchVideosList";
 
 export const getMockSearchVideosList: HttpHandler = http.get(
-  getSearchVideosListURL,
+  getSearchVideosListUrl(),
   () => {
     return HttpResponse.json(GET_MOCK_SEARCH_VIDEOS_LIST.success);
   },

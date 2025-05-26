@@ -1,4 +1,3 @@
-import { API_BASE_URL } from "@/src/shared/api/constants";
 import {
   ListPageApiInfo,
   VideoListItem,
@@ -20,14 +19,23 @@ export type GetVideosPopularListResponse = {
   lists: PopularListItem[];
 } & ListPageApiInfo;
 
-export const getVideosPopularListUrl = `${API_BASE_URL}/api/videos/popular-list`;
+export function getVideosPopularListUrl() {
+  const base = process.env.NEXT_PUBLIC_BASE_URL;
+  if (!base) {
+    if (typeof window === "undefined") {
+      console.warn("BASE_URL is undefined during SSR");
+    }
+    return "/api/videos/popular-list"; // fallback
+  }
+  return `${base}/api/videos/popular-list`;
+}
 
 export const getVideosPopularList = async (
   params: GetVideosPopularListRequestParams,
 ): Promise<GetVideosPopularListResponse> => {
   const queryParams = queryString.stringify(params);
 
-  const url = `${getVideosPopularListUrl}?${queryParams}`;
+  const url = `${getVideosPopularListUrl()}?${queryParams}`;
 
   const response = await fetch(url);
 

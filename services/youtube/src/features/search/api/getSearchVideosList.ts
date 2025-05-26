@@ -1,4 +1,3 @@
-import { API_BASE_URL } from "@/src/shared/api/constants";
 import {
   ListPageApiInfo,
   VideoListItem,
@@ -21,14 +20,23 @@ export type GetSearchVideosListResponse = {
   lists: SearchVideosListItem[];
 } & ListPageApiInfo;
 
-export const getSearchVideosListURL = `${API_BASE_URL}/api/videos/search`;
+export function getSearchVideosListUrl() {
+  const base = process.env.NEXT_PUBLIC_BASE_URL;
+  if (!base) {
+    if (typeof window === "undefined") {
+      console.warn("BASE_URL is undefined during SSR");
+    }
+    return "/api/videos/search"; // fallback
+  }
+  return `${base}/api/videos/search`;
+}
 
 export const getSearchVideosList = async (
   params: GetSearchVideosListRequestParams,
 ): Promise<GetSearchVideosListResponse> => {
   const queryParams = queryString.stringify(params);
 
-  const url = `${getSearchVideosListURL}?${queryParams}`;
+  const url = `${getSearchVideosListUrl()}?${queryParams}`;
 
   const response = await fetch(url);
 
