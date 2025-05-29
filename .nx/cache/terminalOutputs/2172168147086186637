@@ -1,0 +1,32 @@
+ [37m[1m [22m[39m Creating an optimized production build ...
+ [32m[1m✓[22m[39m Compiled successfully
+ [37m[1m [22m[39m Skipping validation of types
+ [37m[1m [22m[39m Skipping linting
+ [37m[1m [22m[39m Collecting page data ...
+ [37m[1m [22m[39m Generating static pages (0/8) ...
+ [33m[1m⚠[22m[39m Entire page /search deopted into client-side rendering. https://nextjs.org/docs/messages/deopted-into-client-rendering /search
+ [37m[1m [22m[39m Generating static pages (2/8) 
+ [37m[1m [22m[39m Generating static pages (4/8) 
+ [33m[1m⚠[22m[39m Entire page / deopted into client-side rendering. https://nextjs.org/docs/messages/deopted-into-client-rendering /
+ [37m[1m [22m[39m Generating static pages (6/8) 
+ [32m[1m✓[22m[39m Generating static pages (8/8) 
+ [37m[1m [22m[39m Finalizing page optimization ...
+ [37m[1m [22m[39m Collecting build traces ...
+
+[4mRoute (app)[24m                              [4mSize[24m     [4mFirst Load JS[24m
+┌ ○ /                                    1.37 kB         [32m106 kB[39m
+├ ○ /_not-found                          874 B          [32m81.6 kB[39m
+├ ○ /api/ping                            0 B                [32m0 B[39m
+├ λ /api/videos/popular-list             0 B                [32m0 B[39m
+├ λ /api/videos/search                   0 B                [32m0 B[39m
+└ ○ /search                              2.15 kB         [32m107 kB[39m
++ First Load JS shared by all            [32m80.7 kB[39m
+  ├ chunks/1dd3208c-e791ad5e1b4c022b.js  51.1 kB
+  ├ chunks/791-15bed7d7771f0a87.js       27.5 kB
+  ├ chunks/main-app-614908366c835000.js  230 B
+  └ chunks/webpack-aeafd839b33e0373.js   1.89 kB
+
+
+λ  (Server)  server-side renders at runtime (uses [36mgetInitialProps[39m or [36mgetServerSideProps[39m)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+

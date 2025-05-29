@@ -2440,6 +2440,7 @@ __metadata:
     happy-dom: "npm:^12.10.3"
     msw: "npm:^2.0.9"
     next: "npm:13.5.4"
+    next-router-mock: "npm:^1.0.2"
     query-string: "npm:^9.2.0"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -13628,6 +13629,16 @@ __metadata:
     react: ">=16.x <=18.x"
     react-dom: ">=16.x <=18.x"
   checksum: 10c0/d48ad271f58312d11f392b0fbd7b2dbc5990cc82fcb6d28f687875a52b28b695c0700b93f197c72910a4c73da0a1fe4867db95315bc2ee7f0fc1743279f41b80
+  languageName: node
+  linkType: hard
+
+"next-router-mock@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "next-router-mock@npm:1.0.2"
+  peerDependencies:
+    next: ">=10.0.0"
+    react: ">=17.0.0"
+  checksum: 10c0/a19c0a05df90942467c0924bf95d8072d6f98152e421382ba39022d4e04e87dcd2ded818cf82f8cc6631712c2d27214cf66da957481be125880779c802870bf6
   languageName: node
   linkType: hard
 

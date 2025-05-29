@@ -1,0 +1,33 @@
+ [37m[1m [22m[39m Skipping validation of types
+ [37m[1m [22m[39m Skipping linting
+ [37m[1m [22m[39m Creating an optimized production build ...
+ [32m[1m✓[22m[39m Compiled successfully
+ [37m[1m [22m[39m Collecting page data ...
+ [37m[1m [22m[39m Generating static pages (0/6) ...
+ [37m[1m [22m[39m Generating static pages (1/6) 
+ [37m[1m [22m[39m Generating static pages (2/6) 
+ [37m[1m [22m[39m Generating static pages (4/6) 
+ [32m[1m✓[22m[39m Generating static pages (6/6) 
+ [37m[1m [22m[39m Finalizing page optimization ...
+ [37m[1m [22m[39m Collecting build traces ...
+
+[4mRoute (pages)[24m                              [4mSize[24m     [4mFirst Load JS[24m
+┌   /_app                                  0 B            [32m79.7 kB[39m
+├ ○ /404                                   637 B          [32m86.8 kB[39m
+├ λ /editor                                8.75 kB         [32m117 kB[39m
+├ ○ /editor/new                            19.8 kB         [33m145 kB[39m
+├ ○ /editor/new/json                       9.54 kB         [33m135 kB[39m
+├ ○ /playground                            453 B          [32m80.1 kB[39m
+├ ○ /preview/[viewId]                      3.94 kB         [32m114 kB[39m
+└ ● /view/[slug]                           3.33 kB         [32m113 kB[39m
++ First Load JS shared by all              [32m86.2 kB[39m
+  ├ chunks/framework-8a8ee0a30377ce1f.js   45.4 kB
+  ├ chunks/main-a46041cdf2d2ff22.js        32.9 kB
+  ├ chunks/pages/_app-e8f3bc64c5709a90.js  668 B
+  ├ chunks/webpack-efdab446b2c4fcf1.js     774 B
+  └ css/1e5253ebce10a3f7.css               6.56 kB
+
+λ  (Server)  server-side renders at runtime (uses [36mgetInitialProps[39m or [36mgetServerSideProps[39m)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+●  (SSG)     automatically generated as static HTML + JSON (uses [36mgetStaticProps[39m)
+

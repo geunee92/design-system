@@ -1,0 +1,27 @@
+ [37m[1m [22m[39m Linting and checking validity of types ...
+
+ [33m[1m⚠[22m[39m The Next.js plugin was not detected in your ESLint configuration. See https://nextjs.org/docs/basic-features/eslint#migrating-existing-config
+ [37m[1m [22m[39m Creating an optimized production build ...
+ [32m[1m✓[22m[39m Compiled successfully
+ [37m[1m [22m[39m Collecting page data ...
+ [37m[1m [22m[39m Generating static pages (0/5) ...
+ [37m[1m [22m[39m Generating static pages (1/5) 
+ [37m[1m [22m[39m Generating static pages (2/5) 
+ [37m[1m [22m[39m Generating static pages (3/5) 
+ [32m[1m✓[22m[39m Generating static pages (5/5) 
+ [37m[1m [22m[39m Finalizing page optimization ...
+ [37m[1m [22m[39m Collecting build traces ...
+
+[4mRoute (pages)[24m                              [4mSize[24m     [4mFirst Load JS[24m
+┌ ○ / ([32m358 ms[39m)                             851 B           [31m[1m180 kB[22m[39m
+├ ○ /404                                   180 B          [32m84.2 kB[39m
+├ ○ /hooks ([32m344 ms[39m)                        959 B           [31m[1m180 kB[22m[39m
+└ ○ /themes/Installation ([32m359 ms[39m)          943 B           [31m[1m180 kB[22m[39m
++ First Load JS shared by all              [32m84 kB[39m
+  ├ chunks/framework-2c4387c5dabb866b.js   45.1 kB
+  ├ chunks/main-abe67238efdc94b7.js        37.7 kB
+  ├ chunks/pages/_app-c54702eb327175a3.js  205 B
+  └ chunks/webpack-6af0e3c12b874bb0.js     1.03 kB
+
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+

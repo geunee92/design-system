@@ -1,0 +1,60 @@
+
+[1mChromatic CLI v11.28.2[22m
+[2mhttps://www.chromatic.com/docs/cli[22m
+
+Authenticating with Chromatic
+    → Connecting to https://index.chromatic.com
+[33m⚠[39m [1mUsing outdated package[22m
+You are using an outdated version of the Chromatic CLI (v11.28.2).
+A new major version is available (v12.0.0).
+Run [1myarn upgrade chromatic --latest[22m to upgrade.
+Authenticated with Chromatic
+[2m    → Using project token '****************6803'[22m
+Retrieving git information
+Retrieved git information
+[2m    → Commit '791f7f0' on branch 'main'; found 1 parent build[22m
+Collecting Storybook metadata
+No viewlayer package listed in dependencies. Checking transitive dependencies.
+Collected Storybook metadata
+[2m    → ; no supported addons found[22m
+Initializing build
+Initialized build
+[2m    → Build 18 initialized[22m
+Building your Storybook
+    → Running command: yarn run build-storybook --output-dir=/var/folders/4d/h2y44ynd209cgltfsvmfk37m0000gn/T/chromatic--49278-e8Puj1Y4Z4gF
+    → [*                   ]
+Storybook built in 7 seconds
+[2m    → View build log at /Users/geunee/Desktop/design-system/services/storybook/build-storybook.log[22m
+Publish your built Storybook
+    → Validating Storybook files
+Publishing your built Storybook
+    → Calculating file hashes
+Publishing your built Storybook
+    → Starting publish
+    → [===============     ] 73%
+Publishing your built Storybook
+    → Finalizing upload
+Publish complete in 3 seconds
+[2m    → Uploaded 2 files (6.82 kB), skipped 81 files[22m
+Verifying your Storybook
+    → This may take a few minutes
+    → [*                   ]
+[32m✔[39m [1mStorybook published[22m
+We found 10 components with 18 stories.
+[34mℹ[39m View your Storybook at [36mhttps://6821aaef1e50ee06303fc093-aybyfapbjg.chromatic.com/[39m
+Started build 18
+[2m    → View build details at https://www.chromatic.com/build?appId=6821aaef1e50ee06303fc093&number=18[22m
+Running 18 tests
+    → This may take a few minutes
+[34mℹ[39m [1mSpeed up Continuous Integration[22m
+Your project is linked to GitHub so Chromatic will report results there.
+This means you can add the option `with: exitOnceUploaded: true` to your workflow to skip waiting for build results.
+Read more here: [36mhttps://www.chromatic.com/docs/github-actions#available-options[39m
+    → [=                   ] 1/18  
+    → [==========          ] 9/18  
+    → [==================  ] 16/18  
+[32m✔[39m [1mBuild 18 passed![22m
+No changes were found in this build.
+[34mℹ[39m View build details at [36mhttps://www.chromatic.com/build?appId=6821aaef1e50ee06303fc093&number=18[39m
+Build 18 passed!
+[2m    → Tested 18 stories across 10 components; captured 18 snapshots in 1 minute 12 seconds[22m

@@ -3374,6 +3374,18 @@
       "services/youtube/package.json",
       "nx/core/package-json"
     ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
     "metadata.js": [
       "services/youtube/package.json",
       "nx/core/package-json"
@@ -3387,6 +3399,62 @@
       "nx/core/package-json"
     ],
     "targets": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.executor": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.options": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.metadata": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.options.script": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.metadata.scriptContent": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.metadata.runCommand": [
       "services/youtube/package.json",
       "nx/core/package-json"
     ],
@@ -3501,6 +3569,42 @@
     "targets.lint.metadata.runCommand": [
       "services/youtube/package.json",
       "nx/core/package-json"
+    ],
+    "targets.dev:mocking": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev:mocking.executor": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev:mocking.options": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev:mocking.metadata": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev:mocking.options.script": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev:mocking.metadata.scriptContent": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev:mocking.metadata.runCommand": [
+      "services/youtube/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
     ],
     "targets.build.dependsOn": [
       "nx.json",
