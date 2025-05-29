@@ -4,12 +4,13 @@ import { useGetVideosPopularList } from "../../hooks/useGetVideosPopularList";
 import * as s from "./style.css";
 import { VideosPopularListItem } from "./ListItem";
 import { VisibilityLoader } from "@/src/shared/components/VisibilityLoader";
+import { flattenInfinityListData } from "@/src/shared/utils/data";
 
 export const VideosPopularList = () => {
   const { data, hasNextPage, fetchNextPage, isFetchingNextPage } =
     useGetVideosPopularList({});
 
-  const flatData = data.pages.map((page) => page?.lists ?? []).flat();
+  const flatData = flattenInfinityListData(data);
 
   return (
     <>

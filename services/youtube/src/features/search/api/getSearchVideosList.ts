@@ -1,5 +1,5 @@
 import {
-  ListPageApiInfo,
+  ListResponse,
   VideoListItem,
 } from "@/src/shared/api/youtube/types/list";
 import { youtube_v3 } from "googleapis";
@@ -16,9 +16,7 @@ export type GetSearchVideosListRequestParams = Pick<
 
 export type SearchVideosListItem = VideoListItem;
 
-export type GetSearchVideosListResponse = {
-  lists: SearchVideosListItem[];
-} & ListPageApiInfo;
+export type GetSearchVideosListResponse = ListResponse<SearchVideosListItem>;
 
 export function getSearchVideosListUrl() {
   const base = process.env.NEXT_PUBLIC_BASE_URL;

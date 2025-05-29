@@ -1,5 +1,5 @@
 import {
-  ListPageApiInfo,
+  ListResponse,
   VideoListItem,
 } from "@/src/shared/api/youtube/types/list";
 import { youtube_v3 } from "googleapis";
@@ -15,9 +15,7 @@ export type PopularListItem = {
   viewCountDisplayText: string; // 23만
 } & VideoListItem;
 
-export type GetVideosPopularListResponse = {
-  lists: PopularListItem[];
-} & ListPageApiInfo;
+export type GetVideosPopularListResponse = ListResponse<PopularListItem>;
 
 export function getVideosPopularListUrl() {
   const base = process.env.NEXT_PUBLIC_BASE_URL;

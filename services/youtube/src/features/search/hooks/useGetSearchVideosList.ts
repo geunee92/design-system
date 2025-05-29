@@ -7,7 +7,7 @@ import {
   GetSearchVideosListRequestParams,
   GetSearchVideosListResponse,
   getSearchVideosList,
-  getSearchVideosListURL,
+  getSearchVideosListUrl,
 } from "../api/getSearchVideosList";
 
 type Params = Pick<GetSearchVideosListRequestParams, "q" | "order"> & {
@@ -22,7 +22,7 @@ export const useGetSearchVideosList = ({
   InfiniteData<GetSearchVideosListResponse, Error>
 > => {
   return useSuspenseInfiniteQuery({
-    queryKey: ["search", q, order, getSearchVideosListURL],
+    queryKey: ["search", q, order, getSearchVideosListUrl()],
     queryFn: ({ pageParam = initPageToken }) => {
       return getSearchVideosList({ q, order, pageToken: pageParam });
     },
