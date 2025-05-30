@@ -13,10 +13,13 @@ export const GET = async (
   try {
     const videoId = params.videoId;
 
-    const { data: videoData } = await youtubeServerInstance.videos.list({
-      part: ["snippet", "statistics"],
-      id: [videoId],
-    });
+    const [isShortVideo, { data: videoData }] = await Promise.all([
+      isShort(videoId),
+      youtubeServerInstance.videos.list({
+        part: ["snippet", "statistics"],
+        id: [videoId],
+      }),
+    ]);
 
     if (!videoData?.items?.length) {
       return new Response(JSON.stringify({ message: "Not Found" }), {
@@ -39,7 +42,11 @@ export const GET = async (
 
     const rawChannelDetail = channelData.items[0];
 
-    const mappedData = mappingResponse(rawVideoDetail, rawChannelDetail);
+    const mappedData = mappingResponse({
+      videoData: rawVideoDetail,
+      channelData: rawChannelDetail,
+      isShortVideo,
+    });
 
     return Response.json(mappedData);
   } catch {
@@ -50,15 +57,22 @@ export const GET = async (
   }
 };
 
-const mappingResponse = (
-  videoData: youtube_v3.Schema$Video,
-  channelData: youtube_v3.Schema$Channel,
-): GetVideosDetailResponse => {
+type Params = {
+  videoData: youtube_v3.Schema$Video;
+  channelData: youtube_v3.Schema$Channel;
+  isShortVideo: boolean;
+};
+const mappingResponse = ({
+  videoData,
+  channelData,
+  isShortVideo,
+}: Params): GetVideosDetailResponse => {
   const videoPublishedAt = videoData.snippet?.publishedAt ?? "";
   const videoParsedViewCount = parseInt(videoData.statistics?.viewCount ?? "0");
   const videoLikeCount = parseInt(videoData.statistics?.likeCount ?? "0");
   const videoDislikeCount = parseInt(videoData.statistics?.dislikeCount ?? "0");
   const videoCommentCount = parseInt(videoData.statistics?.commentCount ?? "0");
+
   const channelViewCount = parseInt(channelData.statistics?.viewCount ?? "0");
   const channelSubscriberCount = parseInt(
     channelData.statistics?.subscriberCount ?? "0",
@@ -66,6 +80,7 @@ const mappingResponse = (
 
   return {
     detail: {
+      videoType: isShortVideo ? "short" : "long",
       videoId: videoData.id ?? "",
       title: videoData.snippet?.title ?? "",
       description: videoData.snippet?.description ?? "",
@@ -117,4 +132,24 @@ const mappingResponse = (
       },
     },
   };
+};
+
+const isShort = async (videoId: string): Promise<boolean> => {
+  const url = "https://www.youtube.com/shorts/" + videoId;
+
+  try {
+    const response = await fetch(url, { method: "HEAD" });
+    if (response.ok) {
+      const responseUrl = response.url;
+      console.log("shorts", responseUrl);
+
+      // responseURL이 "/shorts/videoId" 이면 true
+      // responseURL이 "/watch?=videoId" 이면 false
+      return responseUrl.includes("/shorts/");
+    } else {
+      return false;
+    }
+  } catch (error) {
+    return false;
+  }
 };
