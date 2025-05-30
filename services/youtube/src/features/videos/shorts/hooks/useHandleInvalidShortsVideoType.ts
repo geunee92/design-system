@@ -16,11 +16,7 @@ export const useHandleInvalidShortsVideoType = ({ videoId }: Params) => {
   useEffect(() => {
     if (isLoading) return;
 
-    console.log(videoDetail.videoType);
-
     const isShortVideo = videoDetail.videoType === "short";
-
-    console.log(isShortVideo);
 
     if (!isShortVideo) {
       router.replace(`/videos/detail/${videoId}`);

@@ -141,7 +141,6 @@ const isShort = async (videoId: string): Promise<boolean> => {
     const response = await fetch(url, { method: "HEAD" });
     if (response.ok) {
       const responseUrl = response.url;
-      console.log("shorts", responseUrl);
 
       // responseURL이 "/shorts/videoId" 이면 true
       // responseURL이 "/watch?=videoId" 이면 false
