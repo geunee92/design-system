@@ -1,3 +1,4 @@
+import { VideoStatistics } from "@/src/shared/api/youtube/types/item";
 import {
   ListResponse,
   VideoListItem,
@@ -9,11 +10,11 @@ export type GetVideosPopularListRequestParams = Pick<
   youtube_v3.Params$Resource$Videos$List,
   "maxResults" | "pageToken"
 >;
-
-export type PopularListItem = {
-  viewCount: number;
-  viewCountDisplayText: string; // 23만
-} & VideoListItem;
+export type PopularListItem = Pick<
+  VideoStatistics,
+  "viewCount" | "viewCountDisplayText"
+> &
+  VideoListItem;
 
 export type GetVideosPopularListResponse = ListResponse<PopularListItem>;
 
