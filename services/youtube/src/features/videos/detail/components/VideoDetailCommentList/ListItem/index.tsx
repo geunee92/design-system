@@ -1,4 +1,4 @@
-import { VideosDetailCommentListItem } from "../../../api/getVideosDetailCommentList";
+import { VideosDetailCommentListItem } from "../../../../../../shared/api/youtube/client/videoDetail/getVideosDetailCommentList";
 import * as s from "./style.css";
 
 type Props = {

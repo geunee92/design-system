@@ -1,4 +1,4 @@
-import { GetVideosDetailRequestParams } from "../api/getVideosDetail";
+import { GetVideosDetailRequestParams } from "../../../../shared/api/youtube/client/videoDetail/getVideosDetail";
 
 export type VideoDetailPageParams = {
   params: GetVideosDetailRequestParams;

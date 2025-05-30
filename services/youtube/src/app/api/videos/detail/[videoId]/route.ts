@@ -1,4 +1,4 @@
-import { GetVideosDetailResponse } from "@/src/features/videos/detail/api/getVideosDetail";
+import { GetVideosDetailResponse } from "@/src/shared/api/youtube/client/videoDetail/getVideosDetail";
 import { VideoDetailPageParams } from "@/src/features/videos/detail/types";
 import { youtubeServerInstance } from "@/src/shared/api/youtube/server/instance";
 import { formatKoreanTextCompareDatesFromNow } from "@/src/shared/utils/format/date";
