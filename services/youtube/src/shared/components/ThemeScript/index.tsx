@@ -1,23 +1,31 @@
-export const ThemeScript = () => {
-  const initDarkTheme = `
-    (() => {
-      const isDarkTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+"use client";
 
-      if (isDarkTheme) {
+import { useEffect } from "react";
+
+export function ThemeScript() {
+  useEffect(() => {
+    const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (isDark) {
+      document.body.classList.add("theme-dark");
+    } else {
+      document.body.classList.remove("theme-dark");
+    }
+
+    const listener = (e: MediaQueryListEvent) => {
+      if (e.matches) {
         document.body.classList.add("theme-dark");
+      } else {
+        document.body.classList.remove("theme-dark");
       }
+    };
 
-      const mediaQueryList = window.matchMedia("(prefers-color-scheme: dark)");
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    mediaQuery.addEventListener("change", listener);
 
-      mediaQueryList.addEventListener("change", (e) => {
-        if (e.matches) {
-          document.body.classList.add("theme-dark");
-        } else {
-          document.body.classList.remove("theme-dark");
-        }
-      });
-    })();
-  `;
+    return () => {
+      mediaQuery.removeEventListener("change", listener);
+    };
+  }, []);
 
-  return <script dangerouslySetInnerHTML={{ __html: initDarkTheme }} />;
-};
+  return null;
+}
